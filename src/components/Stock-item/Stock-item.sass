@@ -1,0 +1,29 @@
+.stocks-item
+    $self: &
+    display: flex
+    align-items: center
+    &.reverse
+        flex-direction: row-reverse
+        #{$self}__img
+            margin-right: 0
+            margin-left: $i*11
+    &__img
+        flex: 0 0 66%
+        position: relative
+        margin-right: $i*11
+        border-radius: 2000px
+        overflow: hidden
+        svg
+            position: absolute
+            top: 50%
+            left: 0
+            width: 100%
+            heigth: 56px
+            margin-top: -28px
+        img
+            width: 100%
+
+    &__title
+        margin-bottom: $i*2
+    &__text
+        margin-bottom: $i*3

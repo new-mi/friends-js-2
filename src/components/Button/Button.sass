@@ -1,0 +1,43 @@
+.button
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  white-space: nowrap
+
+  padding: $i*2 $i*3
+  border-radius: 100px
+
+  transition: all 0.2s ease
+  cursor: pointer
+
+  &_small
+    padding: $i $i*2
+
+  &_white
+    background-color: $white-dark
+    &:hover,
+    &.active
+      background-color: $orange-light
+
+  &_purple
+    background-color: $purple-light
+    color: $white
+
+  &_red
+    background-color: $red-light
+    color: $white
+
+  &_orange
+    background-color: $orange-light
+    color: $white
+
+  &_black
+    background-color: $text
+    color: $white
+
+  &_card-dop
+    padding: 0
+    color: $red-light
+    path
+      fill: $red-light

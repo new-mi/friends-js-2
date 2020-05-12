@@ -1,0 +1,87 @@
+mixin Cart
+  .cart(data-form-success)
+      img.cart_art.cart_art_1(src="./assets/img/art-elements/hotdog.png", alt="")
+      img.cart_art.cart_art_2(src="./assets/img/art-elements/burger.png", alt="")
+      img.cart_art.cart_art_3(src="./assets/img/art-elements/kiwi-v.png", alt="")
+      img.cart_art.cart_art_4(src="./assets/img/art-elements/kiwi-h.png", alt="")
+      .cart__success
+        p.f_title.cart__success-title Спасибо!
+        p.cart__success-text Мы свяжемся с вами в ближайшее время для подтверждения заказа
+        +Button-red.cart__success-button Вернуться на сайт
+  .cart(data-form)
+    .title-block.title-block_left
+       h1.f_subtitle.f_mon.cart__title Ваш заказ
+    .section.section_xxxxs
+      .cart__orders(data-cart)
+
+        //- .cart-item
+        //-   .cart-item__thumb
+        //-     img(src="./assets/img/products/p-1.png", alt="")
+        //-   .cart-item__box
+        //-     .cart-item__row
+        //-       .cart-item__info
+        //-         p.f_xl.cart-item__title Чизбургер
+        //-         p.f_xs.cart-item__descr Котлета из нежного ягненка, соус, сальса, кинза
+        //-       .cart-item__counter.counter(data-counter data-number='0')
+        //-         button.counter__btn(data-counter-descr) &minus;
+        //-         span.f_xl.f_normal.f_os.counter__number(data-counter-number)
+        //-         button.counter__btn(data-counter-incr) &#43;
+        //-       p.f_xl.f_mon.cart-item__price 299 руб
+        //-       svg.cart-item__delete(tabindex="0" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+        //-         path(d="M17.25 4H14.25V2.125C14.25 1.29766 13.5773 0.625 12.75 0.625H5.25C4.42266 0.625 3.75 1.29766 3.75 2.125V4H0.75C0.335156 4 0 4.33516 0 4.75V5.5C0 5.60313 0.084375 5.6875 0.1875 5.6875H1.60312L2.18203 17.9453C2.21953 18.7445 2.88047 19.375 3.67969 19.375H14.3203C15.1219 19.375 15.7805 18.7469 15.818 17.9453L16.3969 5.6875H17.8125C17.9156 5.6875 18 5.60313 18 5.5V4.75C18 4.33516 17.6648 4 17.25 4ZM12.5625 4H5.4375V2.3125H12.5625V4Z")
+        //-     .cart-item__row
+        //-       .f_xs.cart-item__ingredients.ingredients(data-ingredients)
+        //-         .ingredients__title(data-ingredients-head) Изменить ингридиенты
+        //-           img.icon(src="./assets/img/i-top.svg")
+        //-         .ingredients__box(data-ingredients-box)
+        //-           label.ingredients__item
+        //-             input(type="checkbox")
+        //-             span
+        //-             | Сыр
+    .section.section_xs
+      .title-block.title-block_between
+        h2.f_xl.f_mon.cart__subtitle Дополнить заказ
+        .cart__dop-navs
+          img.cart__dop-nav.cart__dop-nav_prev(src="./assets/img/arrow-next-white.svg")
+          img.cart__dop-nav.cart__dop-nav_next(src="./assets/img/arrow-next-white.svg")
+    .section.section_xxxxs
+      .cart__dop-slider.swiper-container
+        .swiper-wrapper(data-dop-products-list = 'p01,p02,p03,p01,p02')
+          //- .swiper-slide.cart-item-dop
+          //-   .cart-item-dop__row
+          //-     .cart-item-dop__thumb
+          //-       img(src="./assets/img/products/p-1.png", alt="")
+          //-     .cart-item-dop__info
+          //-       .f_sm.f_ma.f_sbold.cart-item-dop__title Чизбургер
+          //-       .f_xs.f_mom.f_sbold.cart-item-dop__price 299 руб
+          //-   .cart-item-dop__row
+          //-     +Button-product-card-dop.f_xs.f_sbold.cart-item-dop__btn В корзину
+    .section.section_xs
+      .cart__line
+    .section.section_xxxs
+      +Alert-warning Доставка осуществляется только в следующие районы Зеленограда: 1,2,3,4, Общежитие МИЭТ <br /> Минимальная сумма заказа — 1000 руб
+    .section.section_xs
+      .title-block.title-block_between
+        h1.f_subtitle.f_mon.cart__title Оформление заказа
+        .total-price
+          span.f_xl_2.total-price__text Cумма заказа
+          span.f_subtitle.f_mon.total-price__price(data-cart-total)
+    .section.section_xxs
+      form.form
+        formfield
+          label.f_xl_2.label(for="cart-name") Имя
+          input.input.input_lg#cart-name(type="text" placeholder="Константин Константинопольский" required)
+        formfield
+          label.f_xl_2.label(for="cart-phone") Телефон
+          input.input.input_m#cart-phone(type="text" placeholder="+7 999 999-99-99" required)
+        formfield
+          label.f_xl_2.label(for="cart-address") Адрес
+          div.input.input_lg.input_container
+            span(style="color: #757575") Зеленоград,&nbsp;
+            input.input.input_clear#cart-address(type="text" placeholder="к1206, 127" required)
+        .section.section_m
+          .form__actions
+            +Button-red.form_submit Оформить заказ на сумму:&nbsp;
+              span(data-cart-total)
+            p.f_sm.f_medium.f_mon.form__politic Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки данных</a>
+

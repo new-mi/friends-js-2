@@ -1,0 +1,46 @@
+extends ../layouts/main
+
+block variables
+  - var title = "Акции"
+  - var pageClass = ''
+
+block content
+  section.section
+    .container
+      .title-block
+        h1.f_title Кафе «Friends»
+  section.section.section_xs
+    .container
+      +Block-color.block-color_text
+        +Chat-block
+  section.section.section_xl
+    .container
+      .title-block
+        h1.f_title Почему наше кафе?
+  section.section.section_m
+    .container
+      +Advantages
+  section.section.section_s
+    .container
+      +Block-color.block-color_text
+        //-SH-block
+        .sh-block(data-sh-block)
+          .sh-block__container.article(data-sh-container)
+            p Безусловно, современная методология разработки представляет собой интересный эксперимент проверки благоприятных перспектив! Лишь сторонники тоталитаризма в науке могут быть указаны как претенденты на роль ключевых факторов.
+            p Значимость этих проблем настолько очевидна, что базовый вектор развития предоставляет широкие возможности для поэтапного и последовательного развития
+            p Значимость этих проблем настолько очевидна, что базовый вектор развития предоставляет широкие возможности для поэтапного и последовательного развития
+            p Значимость этих проблем настолько очевидна, что базовый вектор развития предоставляет широкие возможности для поэтапного и последовательного развития
+            p Значимость этих проблем настолько очевидна, что базовый вектор развития предоставляет широкие возможности для поэтапного и последовательного развития
+          .sh-block__actions
+            +Button-sh-block(data-sh-button='false' data-sh-hide="Скрыть" data-sh-show="Посмотреть весь")
+        //-SH-block
+  section.section.section_xl
+    .container
+      +Socials-block
+  section.section.section_xs
+    .container
+      +Gallery
+  section.section.section_xl
+    .container
+      +Block-color.block-color_blockquote
+        +Blockquote

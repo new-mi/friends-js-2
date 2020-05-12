@@ -1,0 +1,71 @@
+extends ../layouts/main
+
+block variables
+  - var title = "Главная"
+  - var pageClass = ''
+
+block content
+  .arts
+    img.arts__item.arts__item_1(src="./assets/img/art-elements/seeds.png")
+    img.arts__item.arts__item_2(src="./assets/img/art-elements/kiwi-h.png")
+    img.arts__item.arts__item_3(src="./assets/img/art-elements/kiwi-v.png")
+  section.section.section_xxs
+    .container
+      +Stocks-slider
+  section.section.section_lg
+    .anchor
+      span#burgers
+    .container
+      .switch-products(data-switcher)
+        nav.switch-products__tabs(data-switcher-nav)
+          a.f_title.switch-products__tab(href="#") Бургеры
+            img.icon.last(src="./assets/img/i-smile.png")
+          a.f_title.switch-products__tab(href="#") Завтраки
+        .switch-products__content(data-switcher-content)
+          .switch-products__item
+            .row(data-products-list="p01,p02,p03")
+              //- .col-6
+              //-   .product-card
+              //-     .product-card__img
+              //-       img.product-card__vapor(src="./assets/img/vapor.svg")
+              //-       img(src="./assets/img/products/p-2.png")
+              //-     .product-card__box
+              //-       h4.f_subtitle.product-card__title Френд’c
+              //-       .product-card__info
+              //-         span.f_xl.f_mon.product-card__price 299 руб
+              //-       .product-card__descr Говяжья котлета с соусом «Айоли»
+              //-       .product-card__actions
+              //-         +Button-product-card.product-card__button В корзину
+          .switch-products__item
+            .row(data-products-list="p03")
+  section.section.section_lg
+    .container
+      +Promo-slider
+  section.section.section_lg
+    .container
+      +Advantages
+  section.section.section_s
+    .container
+      +Block-color.block-color_text
+        //-SH-block
+        .sh-block(data-sh-block)
+          .sh-block__container.article(data-sh-container)
+            p Безусловно, современная методология разработки представляет собой интересный эксперимент проверки благоприятных перспектив! Лишь сторонники тоталитаризма в науке могут быть указаны как претенденты на роль ключевых факторов.
+            p Значимость этих проблем настолько очевидна, что базовый вектор развития предоставляет широкие возможности для поэтапного и последовательного развития
+            p Значимость этих проблем настолько очевидна, что базовый вектор развития предоставляет широкие возможности для поэтапного и последовательного развития
+            p Значимость этих проблем настолько очевидна, что базовый вектор развития предоставляет широкие возможности для поэтапного и последовательного развития
+            p Значимость этих проблем настолько очевидна, что базовый вектор развития предоставляет широкие возможности для поэтапного и последовательного развития
+          .sh-block__actions
+            +Button-sh-block(data-sh-button='false' data-sh-hide="Скрыть" data-sh-show="Посмотреть весь")
+        //-SH-block
+  section.section.section_xl
+    .container
+      +Socials-block
+  section.section.section_xs
+    .container
+      +Gallery
+  section.section.section_xl
+    .container
+      +Block-color.block-color_blockquote
+        +Blockquote-slider
+

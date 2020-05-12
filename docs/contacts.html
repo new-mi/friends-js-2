@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="assets/css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__inner_logo"><a class="logo header__logo" href="index.html"><img src="./assets/img/logo-eng.svg" alt="Friends"/></a>
+            </div>
+            <div class="header__inner_nav header__nav"><a class="button button_white button_small header__nav-item active" href="stocks.html">Акции</a><a class="button button_white button_small header__nav-item" href="menu-cafe.html">Меню</a><a class="button button_white button_small header__nav-item" href="contacts.html">Контакты</a>
+            </div>
+            <div class="header__inner_cart">
+              <div class="header__inner-cart-wrap"><a class="button button_purple header__cart" href="cart.html"><img class="icon icon_cart-mobile first" src="./assets/img/i-cart.svg"/><span class="text">Корзина</span><span class="icon icon_cart last" data-cart-count="data-cart-count"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="section">
+          <div class="container">
+            <div class="contacts-block">
+              <div class="title-block contacts-block__title">
+                <div class="h1 f_title">Контакты</div>
+              </div>
+              <nav class="contacts-block__links">
+                <p class="f_subtitle f_sbold">Зеленоград, к435А</p><a class="f_subtitle f_sbold" href="tel:+79999999999">+7 999 999-99-99</a><a class="f_subtitle f_sbold" href="mailto:email@example.ru">email@example.ru</a>
+              </nav>
+              <div class="contacts-block__actions"><a class="button button_red" href="https://yandex.ru/maps/?um=constructor%3Ab718fff3ec93134cbf9897f969a9b894020c5b9d80b8f84ce41e9bee90046c98&amp;source=constructorLink" target="_blank"><img class="icon first" src="./assets/img/i-eye.svg"/>Зона доставки</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__item footer__item_info">
+              <div class="footer__box"><a class="logo footer__logo"><img src="./assets/img/logo-eng-white.svg" alt="Friends"/></a>
+                <nav class="footer__nav"><a class="button button_white button_small footer__nav-item" href="index.html#burgers">Бургеры</a><a class="button button_white button_small footer__nav-item" href="stocks.html">Акции</a><a class="button button_white button_small footer__nav-item" href="contacts.html">Контакты</a></nav>
+                <nav class="footer__contacts"><a class="f_xl_2 footer__contact" href="tel:+79999999999">+7 999 999-99-99</a><a class="f_xl_2 footer__contact" href="#">Instagram</a><a class="f_xl_2 footer__contact" href="#">Vkontakte</a></nav>
+                <div class="footer__actions"><a class="button button_red" href="index.html#burgers"><img class="icon first" src="./assets/img/i-burger.svg"/>Заказать бургер</a>
+                </div>
+              </div>
+              <div class="footer__bottom"><a class="f_sm_2" href="#">Политика конфиденциальности</a>
+                <p class="f_sm_2">Все права защищены</p>
+              </div>
+            </div>
+            <div class="footer__item footer__item_map">
+              <div class="map">
+                <div class="map__wrap">
+                  <div class="map__box" id="map"></div>
+                </div>
+                <div class="f_xl_2 map__address">Зеленоград, к435А</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal-container">
+        <div class="modal modal_images" data-modal="image" data-src-modal="data-src-modal">
+          <div class="modal__content"><img src="" alt=""/></div>
+        </div>
+        <div class="modal modal_menu" data-modal="menu" data-src-modal="data-src-modal">
+          <div class="modal__content"><img src="./assets/img/menu.jpg" alt="Меню"/></div>
+        </div>
+        <div class="modal modal_cart modal_close-out" data-modal="cart-item" data-src-modal="data-src-modal">
+          <div class="modal__content">
+            <button class="modal__close" type="button" data-modal-close="data-modal-close">&times;</button>
+            <div class="cart">
+              <div class="title-block title-block_left">
+                <h1 class="f_subtitle f_mon cart__title">Вы выбрали</h1>
+              </div>
+              <div class="section section_xxxxs">
+                <div class="cart__orders" data-cart-modal="data-cart-modal"></div>
+              </div>
+              <div class="section section_xxxxs">
+                <div class="alert"><img class="icon alert__icon" src="./assets/img/i-warning.svg"/>
+                  <div class="alert_box">Доставка осуществляется только в следующие районы Зеленограда: 1,2,3,4, Общежитие МИЭТ <br /> Минимальная сумма заказа — 1000 руб
+                  </div>
+                </div>
+              </div>
+              <div class="section section_lg">
+                <div class="cart__actions cart__actions_right">
+                  <button class="button button_red" data-cart-modal-add="data-cart-modal-add">Добавить в корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" id="toast"></div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bf4d1dda-4c4e-459a-a5a0-f8d22b366ab8&amp;lang=ru_RU"></script>
+    <script src="assets/js/libs.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

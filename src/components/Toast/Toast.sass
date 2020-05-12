@@ -1,0 +1,76 @@
+.toast
+  position: fixed
+  bottom: $i*7
+  right: 0
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  width: calc(330px + $i*5)
+  padding-right: $i*5
+  height: calc(100vh - 20px)
+  pointer-events: none
+  font: inherit
+  font-size: 16px
+  z-index: 200
+  overflow: hidden
+  &__line
+    height: 4px
+    width: 0%
+    position: absolute
+    top: -1px
+    left: 0
+    background: rgba(48, 48, 48, 0.6)
+    transition-property: width
+    transition-timing-func: ease-in
+
+  &__close
+    position: absolute
+    top: 5px
+    right: 5px
+    padding: 1px
+    background-color: transparent
+    border: none
+    cursor: pointer
+    font-size: 1em
+    line-height: 1
+    font-weight: bold
+
+  &__element
+    position: relative
+    width: 100%
+    background-color: #000000
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1)
+    border-radius: $i*1.5
+    padding: $i*3 $i*4
+    margin-bottom: 10px
+    pointer-events: all
+    color: #333
+    opacity: 0.99
+    transform: translateX(0%)
+    transition: all 0.25s ease
+    &[data-show="false"]
+      pointer-events: none
+      opacity: 0 !important
+      transform: translateX(20%)
+    &[data-type]
+      color: #fff
+    &[data-type="info"]
+      background-color: #08BDBD
+      box-shadow: 0 0 5px 1px rgba(8, 189, 189, 0.3)
+    &[data-type="danger"]
+      background-color: #f21b3f
+      box-shadow: 0 0 5px 1px rgba(242, 27, 63, 0.3)
+    &[data-type="warning"]
+      background-color: #FF9914
+      box-shadow: 0 0 5px 1px rgba(255, 153, 20, 0.3)
+    &[data-type="success"]
+      background-color: #53BF2F
+      box-shadow: 0 0 5px 1px rgba(83, 191, 47, 0.3)
+
+  &__header
+    font-size: 1em
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 10px
+    &:empty
+      margin: 0

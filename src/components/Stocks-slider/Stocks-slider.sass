@@ -1,0 +1,24 @@
+.stocks-slider
+  position: relative
+  &__nav
+    // position: absolute
+    // top: 80px
+    // cursor: pointer
+    // opacity: 0.8
+    // z-index: 1
+    width: 2.222rem
+    &:hover
+      opacity: 0.9
+    &:active
+      opacity: 1
+    &_prev
+      // right: 280px
+      transform: rotate(180deg)
+    &_next
+      margin-left: $i*4
+      // right: 220px
+
+  .swiper-slide
+    opacity: 0 !important
+    &.swiper-slide-active
+      opacity: 1 !important

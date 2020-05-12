@@ -1,0 +1,11 @@
+extends ../layouts/cart
+
+block variables
+  - var title = "Корзина"
+  - var pageClass = ''
+
+block content
+  section.section.section_xs
+    .container.container_cart
+      +Cart
+  section.section.section_lg

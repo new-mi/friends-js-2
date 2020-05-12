@@ -1,0 +1,56 @@
+[
+  {
+    "id": "p01",
+    "name": "Чизбургер",
+    "descr": "Котлета из нежного ягненка, соус, сальса, кинза",
+    "img": "./assets/img/products/p-1.png",
+    "price": 299,
+    "count": 1,
+    "cartType": "semicircle",
+    "isNew": true,
+    "ingredients": [
+      {
+        "name": "Сыр",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Бекон",
+        "inProduct": true,
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "p02",
+    "name": "Ролл",
+    "descr": "Говяжья котлета с соусом «Айоли»",
+    "img": "./assets/img/products/p-3.png",
+    "price": 299,
+    "count": 1,
+    "cartType": "ellipse",
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Сыр",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Бекон",
+        "inProduct": false,
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "p03",
+    "name": "Френд'с",
+    "descr": "Говяжья котлета с соусом «Айоли»",
+    "img": "./assets/img/products/p-2.png",
+    "price": 299,
+    "count": 1,
+    "cartType": "semicircle",
+    "isNew": false
+  }
+]

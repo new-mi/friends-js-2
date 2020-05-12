@@ -1,0 +1,47 @@
+.footer
+    $self: &
+    display: flex
+    align-items: flex-start
+    margin: 176px 0 30px
+    &__inner
+        display: flex
+    &__item
+        &_info
+            flex: 1 1 auto
+        &_map
+            flex: 0 0 auto
+            margin-left: $i*9
+    &__box
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        height: 386px
+        padding: $i*3 $i*5 $i*5
+        background-color: $text
+        border-radius: 300px
+    &__nav
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        margin-bottom: -$i*2
+        &-item
+          margin-bottom: $i*2
+        &-item:not(:last-child)
+            margin-right: $i*2
+    &__contacts
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        color: $white
+        #{$self}__contact:not(:last-child)
+            margin-right: $i*2
+    &__bottom
+        display: flex
+        justify-content: center
+        margin-top: $i*4
+        & > *
+            color: $text-light
+            &:not(:last-child)
+                margin-right: $i*4

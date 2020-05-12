@@ -1,0 +1,25 @@
+.header
+  padding: $i 0
+  &__inner
+    display: flex
+    align-items: flex-end
+    &_logo
+      margin-right: $i*6
+    &_cart
+      position: relative
+      margin-left: auto
+      z-index: 100
+      &-wrap
+        position: absolute
+        top: 0
+        right: 0
+
+  &__cart
+    position: fixed
+    transform: translate(-100%, -100%)
+    .icon_cart-mobile
+      display: none
+
+  &__nav
+    &-item:not(:last-child)
+      margin-right: $i*2

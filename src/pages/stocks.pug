@@ -1,0 +1,35 @@
+extends ../layouts/main
+
+block variables
+  - var title = "Акции"
+  - var pageClass = ''
+
+block content
+  section.section.section_xxs
+    .container
+      .stocks-item
+        .stocks-item__img
+          <svg viewBox="0 0 784 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M794 27.829C780.6 1.43057 740.4 1.43057 727 27.829C713.6 54.2274 673.4 54.2274 660 27.829C646.6 1.43056 606.4 1.43056 593 27.829C579.6 54.2274 539.4 54.2274 526 27.829C512.6 1.43055 472.4 1.43055 459 27.829C445.6 54.2274 405.4 54.2274 392 27.829C378.6 1.43054 338.4 1.43053 325 27.829C311.6 54.2274 271.4 54.2274 258 27.829C244.6 1.43053 204.4 1.43052 191 27.829C177.6 54.2274 137.4 54.2274 124 27.829C110.6 1.43052 70.4 1.43051 57 27.8289C43.6 54.2274 3.39995 54.2274 -10 27.8289" stroke="white" stroke-width="16"/>
+          </svg>
+          img(src="./assets/img/stocks/stock-1.jpg", alt="Новинки!")
+        .stocks-item__descr
+          .stocks-item__box
+            h3.f_title.stocks-item__title Новинки!
+            p.stocks-item__text Современные технологии достигли такого уровня, что разбавленное изрядной долей эмпатии, рациональное мышление требует анализа как.
+            .stocks-item__actions
+              +Button-red-link(href="stock-page.html") Подробнее
+  section.section.section_lg
+    .container
+      .stocks-item.reverse
+        .stocks-item__img
+          <svg viewBox="0 0 784 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M794 27.829C780.6 1.43057 740.4 1.43057 727 27.829C713.6 54.2274 673.4 54.2274 660 27.829C646.6 1.43056 606.4 1.43056 593 27.829C579.6 54.2274 539.4 54.2274 526 27.829C512.6 1.43055 472.4 1.43055 459 27.829C445.6 54.2274 405.4 54.2274 392 27.829C378.6 1.43054 338.4 1.43053 325 27.829C311.6 54.2274 271.4 54.2274 258 27.829C244.6 1.43053 204.4 1.43052 191 27.829C177.6 54.2274 137.4 54.2274 124 27.829C110.6 1.43052 70.4 1.43051 57 27.8289C43.6 54.2274 3.39995 54.2274 -10 27.8289" stroke="white" stroke-width="16"/>
+          </svg>
+          img(src="./assets/img/stocks/stock-2.jpg", alt="Скидка 20%")
+        .stocks-item__descr
+          .stocks-item__box
+            h3.f_title.stocks-item__title Скидка 20%
+            p.stocks-item__text Современные технологии достигли такого уровня, что разбавленное изрядной долей эмпатии, рациональное мышление требует анализа как.
+            .stocks-item__actions
+              +Button-red-link(href="stock-page.html") Подробнее

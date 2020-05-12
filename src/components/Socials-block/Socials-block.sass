@@ -1,0 +1,26 @@
+.socials-block
+  display: flex
+  align-items: center
+  justify-content: center
+  &__title
+    margin-right: $i*6
+  &__item
+    padding: $i*3 $i*4
+    border-radius: 100px
+    text-decoration: none
+    color: $white
+    &:not(:last-child)
+      margin-right: $i*3
+    &_instagram
+      background: #DD2A7B
+      background: linear-gradient(0deg, #DD2A7B, #DD2A7B)
+      &:hover
+        background: darken(#DD2A7B, 3%)
+      &:active
+        background: darken(#DD2A7B, 6%)
+    &_vk
+      background: #27599B
+      &:hover
+        background: darken(#27599B, 3%)
+      &:active
+        background: darken(#27599B, 6%)

@@ -1,0 +1,61 @@
+//FONST
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap')
+
+
+$FM: 'Montserrat', sans-serif
+$FMA: 'Montserrat Alternates', sans-serif
+$FOS: 'Open Sans', sans-serif
+
+// reset fonts
+html
+  font-family: $FOS
+  font-size: 18px
+  line-height: 1.5
+  font-weight: 400
+  color: $text
+
+button
+  font-family: inherit
+  color: inherit
+  font-weight: 600
+  font-size: 1rem
+// reset fonts
+
+.f
+  //fonts class
+  &_title //48
+    font: 700 2.667rem/1.5 $FMA
+  &_subtitle //32
+    font: 700 1.778rem/1.5 $FMA
+  &_xl //24
+    font: 700 1.333rem/1.5 $FMA
+  &_xl_2 //24
+    font: 600 1.333rem/1.5 $FM
+  &_lg //20
+    font-size: 1.111rem
+  &_m //18
+    font-size: 1rem
+  &_sm //16
+    font-size: 0.889rem
+  &_sm_2 //16
+    font-size: 0.889rem
+    font-weight: 500
+  &_xs //14
+    font-size: 0.778rem
+
+  //font-family
+  &_ma
+    font-family: $FMA !important
+  &_mon
+    font-family: $FM !important
+  &_os
+    font-family: $FOS !important
+  //weight
+  &_normal
+    font-weight: 400 !important
+  &_medium
+    font-weight: 500 !important
+  &_sbold
+    font-weight: 600 !important
+  &_bold
+    font-weight: 700 !important

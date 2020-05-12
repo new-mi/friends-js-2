@@ -1,0 +1,38 @@
+.cart-item-dop
+  $self: &
+  display: flex
+  flex-direction: column
+  max-width: 270px
+  border-radius: $i*2
+  background-color: $white
+  padding: $i*2
+  transition: background-color 0.2s ease
+  cursor: pointer
+  &:hover
+    background-color: $orange-light
+    #{$self}__btn
+      color: $text
+      path
+        fill: $text
+  &__row
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      margin-bottom: $i*2
+  &__thumb
+    width: 96px
+    flex-shrink: 0
+    img
+      width: 100%
+  &__info
+    margin-left: $i*1.5
+  &__btn
+    margin-left: 8px
+    transition: color 0.2s ease
+    path
+      transition: fill 0.2s ease
+    &:hover
+      color: $text-dark
+      path
+        fill: $text-dark
+

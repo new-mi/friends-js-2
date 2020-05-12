@@ -1,0 +1,21 @@
+.counter
+  display: flex
+  align-items: center
+  &__number
+    color: $text-light
+    padding: 0 $i*2
+  &__btn
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: bold
+    width: 21px
+    height: 21px
+    background-color: $orange-light
+    color: $white
+    line-height: 1
+    border-radius: 50%
+    transition: background-color 0.2s ease
+    cursor: pointer
+    &:hover
+      background-color: $orange-dark

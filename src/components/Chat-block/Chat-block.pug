@@ -1,0 +1,15 @@
+mixin Chat-block
+  .chat-block
+    .chat-block__row
+      img.chat-block__thumb(src="./assets/img/chat-thumb.jpg")
+      .chat-block__msgs
+        .chat-block__msgs-item
+          p Привет!
+        .chat-block__msgs-item
+          p В настоящий момент для доставки доступны только <a href="#">бургеры и завтраки</a>
+        .chat-block__msgs-item
+          | Но вы можете заглнянуть к нам в кафе по адресу: Зеленоград, к435 <br />Там очень разнообразное меню и мы работаем КРУГЛОСУТОЧНО
+        .chat-block__msgs-item
+          img.chat-block__img-menu(src="./assets/img/chat-img.jpg")
+          +Button-eye-red(data-modal-target="menu") Посмотреть меню
+

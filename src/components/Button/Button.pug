@@ -1,0 +1,56 @@
+mixin Button-header-cart
+  a.button.button_purple.header__cart&attributes(attributes)
+    img.icon.icon_cart-mobile.first(src="./assets/img/i-cart.svg")
+    span.text Корзина
+    span.icon.icon_cart.last(data-cart-count)
+
+mixin Button-header-nav
+  a.button.button_white.button_small.header__nav-item&attributes(attributes)
+    block
+
+mixin Button-red-link
+  a.button.button_red&attributes(attributes)
+    block
+
+mixin Button-red
+  button.button.button_red&attributes(attributes)
+    block
+
+mixin Button-burger-red()
+  a.button.button_red&attributes(attributes)
+    img.icon.first(src="./assets/img/i-burger.svg")
+    block
+
+mixin Button-eye-red()
+  button.button.button_red&attributes(attributes)
+    img.icon.first(src="./assets/img/i-eye.svg")
+    block
+
+mixin Button-eye-red-link()
+  a.button.button_red&attributes(attributes)
+    img.icon.first(src="./assets/img/i-eye.svg")
+    block
+
+mixin Button-sh-block
+  a.button.button_black&attributes(attributes)
+    img.icon.first(src="./assets/img/i-eye.svg")
+    span
+
+mixin Button-product-card
+  a.button.button_orange.button_small&attributes(attributes)
+    img.icon.first(src="./assets/img/i-cart-add.svg")
+    block
+
+mixin Button-product-card-dop
+  a.button.button_card-dop&attributes(attributes)
+    <svg class="icon first" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8905 17.877C14.8261 17.7467 14.7918 17.6037 14.79 17.4585V11.2245C14.79 10.7175 15.219 10.3605 15.672 10.3605H15.7035C16.155 10.3605 16.5945 10.7175 16.5945 11.2245V16.4145H17.9475V13.473H19.887L20.133 8.96397H21.282C21.882 8.96397 22.3695 7.13397 22.3695 7.13397C22.3695 6.57897 21.8835 6.12597 21.282 6.12597H18.39L16.8375 0.670473C16.785 0.558069 16.7104 0.457418 16.6181 0.374558C16.5258 0.291697 16.4177 0.228334 16.3003 0.188271C16.1829 0.148207 16.0587 0.132268 15.935 0.14141C15.8113 0.150553 15.6907 0.184587 15.5805 0.241473L15.4725 0.295473C15.2476 0.414079 15.0772 0.614879 14.9967 0.856033C14.9162 1.09719 14.9319 1.36009 15.0405 1.58997L16.152 6.12447H6.17096L7.32296 1.59597C7.43325 1.36703 7.45098 1.10437 7.37247 0.862677C7.29396 0.620987 7.12525 0.418893 6.90146 0.298473L6.79646 0.244473C6.6867 0.186598 6.56641 0.151425 6.44275 0.141052C6.3191 0.130678 6.19463 0.145317 6.07676 0.184094C5.95888 0.222871 5.85003 0.284993 5.75669 0.366753C5.66335 0.448512 5.58743 0.548236 5.53346 0.659973L3.92396 6.12447H1.08896C0.488965 6.12447 0.00146484 6.57747 0.00146484 7.13247C0.00146484 7.13247 0.487465 8.96247 1.08896 8.96247H2.04296L2.71646 18.978C2.71646 18.978 2.79446 20.9415 5.88596 20.9415H14.892V17.877H14.8905ZM17.9535 7.49997H19.5465V9.09297H17.9535V7.49997ZM4.64096 9.04647H2.86796V7.35897H4.64096V9.04647ZM7.50897 17.613C7.50897 18.138 7.13246 18.5625 6.67046 18.5625H6.63596C6.16946 18.5625 5.79447 18.138 5.79447 17.613V11.1195C5.79447 10.5945 6.16946 10.1715 6.63596 10.1715H6.67046C7.13246 10.1715 7.50897 10.5945 7.50897 11.1195V17.613ZM12.006 17.3205C12.006 17.8215 11.661 18.228 11.235 18.228H11.2035C10.7775 18.228 10.4325 17.8215 10.4325 17.3205V11.172C10.4325 10.671 10.776 10.266 11.2035 10.266H11.235C11.6595 10.266 12.006 10.6725 12.006 11.172V17.3205Z" fill="white"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M24 18.018H20.988V15.159H19.5825V18.018H16.578V19.359H19.5825V22.407H20.988V19.359H24V18.018Z" fill="white"/>
+    </svg>
+    block
+
+mixin Button-cart-back
+  a.button.button_white&attributes(attributes)
+    img.icon.first(src="./assets/img/i-back.svg")
+    span.text
+      block

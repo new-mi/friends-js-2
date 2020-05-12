@@ -1,0 +1,25 @@
+footer.footer
+  .container
+    .footer__inner
+      .footer__item.footer__item_info
+        .footer__box
+          +Logo-white.footer__logo
+          nav.footer__nav
+            a.button.button_white.button_small.footer__nav-item(href="index.html#burgers") Бургеры
+            //- a.button.button_white.button_small.footer__nav-item(href="/delivery.html") Доставка
+            a.button.button_white.button_small.footer__nav-item(href="stocks.html") Акции
+            a.button.button_white.button_small.footer__nav-item(href="contacts.html") Контакты
+          nav.footer__contacts
+            a.f_xl_2.footer__contact(href="tel:+79999999999") +7 999 999-99-99
+            a.f_xl_2.footer__contact(href="#") Instagram
+            a.f_xl_2.footer__contact(href="#") Vkontakte
+          .footer__actions
+            +Button-burger-red(href="index.html#burgers") Заказать бургер
+        .footer__bottom
+          a.f_sm_2(href="#") Политика конфиденциальности
+          p.f_sm_2 Все права защищены
+
+      .footer__item.footer__item_map
+        +map()
++Modal
+#toast.toast

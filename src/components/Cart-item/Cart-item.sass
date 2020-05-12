@@ -1,0 +1,43 @@
+.cart-item
+  display: flex
+  align-items: flex-start
+  padding: $i*2
+  background-color: $white
+  border-radius: $i*2
+  &__box
+    flex: 1 1 auto
+    display: flex
+    flex-direction: column
+  &__title
+    margin-bottom: $i
+  &__row
+    display: flex
+    align-items: flex-start
+  &__counter
+    margin-left: auto
+  &__price
+    flex-shrink: 0
+    width: 130px
+    margin-left: $i*8
+    text-align: right
+  &__delete
+    margin: 5px $i*2 0
+    cursor: pointer
+    svg
+      width: 100%
+    path
+      fill: $grey-2
+      transition: fill 0.2s ease
+    &:hover
+      path
+        fill: $red-light
+  &__thumb
+    flex: 0 0 128px
+    width: 128px
+    margin-right: $i*3
+    img
+      width: 100%
+  &__descr
+    color: $text-light
+  &__ingredients
+    margin-top: $i*4

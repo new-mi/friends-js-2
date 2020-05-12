@@ -1,0 +1,13 @@
+header.header
+  .container
+    .header__inner
+      .header__inner_logo
+        +Logo.header__logo(href="index.html")
+      .header__inner_nav.header__nav
+        //- +Button-header-nav(href="/delivery.html") Доставка
+        +Button-header-nav.active(href="stocks.html") Акции
+        +Button-header-nav(href="menu-cafe.html") Меню
+        +Button-header-nav(href="contacts.html") Контакты
+      .header__inner_cart
+        .header__inner-cart-wrap
+          +Button-header-cart(href="cart.html")

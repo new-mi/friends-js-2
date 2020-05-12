@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Корзина</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="assets/css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="page">
+      <header class="header-cart">
+        <div class="container container_cart">
+          <div class="header-cart__inner">
+            <div class="header-cart__item header-cart__item_logo"><a class="logo" href="index.html"><img src="./assets/img/logo-eng.svg" alt="Friends"/></a>
+            </div>
+            <div class="header-cart__item header-cart__item_back"><a class="button button_white header-cart__button-back" data-back="data-back"><img class="icon first" src="./assets/img/i-back.svg"/><span class="text">Вернуться к покупкам</span></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="section section_xs">
+          <div class="container container_cart">
+            <div class="cart" data-form-success="data-form-success"><img class="cart_art cart_art_1" src="./assets/img/art-elements/hotdog.png" alt=""/><img class="cart_art cart_art_2" src="./assets/img/art-elements/burger.png" alt=""/><img class="cart_art cart_art_3" src="./assets/img/art-elements/kiwi-v.png" alt=""/><img class="cart_art cart_art_4" src="./assets/img/art-elements/kiwi-h.png" alt=""/>
+              <div class="cart__success">
+                <p class="f_title cart__success-title">Спасибо!</p>
+                <p class="cart__success-text">Мы свяжемся с вами в ближайшее время для подтверждения заказа</p>
+                <button class="button button_red cart__success-button">Вернуться на сайт
+                </button>
+              </div>
+            </div>
+            <div class="cart" data-form="data-form">
+              <div class="title-block title-block_left">
+                <h1 class="f_subtitle f_mon cart__title">Ваш заказ</h1>
+              </div>
+              <div class="section section_xxxxs">
+                <div class="cart__orders" data-cart="data-cart"></div>
+              </div>
+              <div class="section section_xs">
+                <div class="title-block title-block_between">
+                  <h2 class="f_xl f_mon cart__subtitle">Дополнить заказ</h2>
+                  <div class="cart__dop-navs"><img class="cart__dop-nav cart__dop-nav_prev" src="./assets/img/arrow-next-white.svg"/><img class="cart__dop-nav cart__dop-nav_next" src="./assets/img/arrow-next-white.svg"/></div>
+                </div>
+              </div>
+              <div class="section section_xxxxs">
+                <div class="cart__dop-slider swiper-container">
+                  <div class="swiper-wrapper" data-dop-products-list="p01,p02,p03,p01,p02"></div>
+                </div>
+              </div>
+              <div class="section section_xs">
+                <div class="cart__line"></div>
+              </div>
+              <div class="section section_xxxs">
+                <div class="alert"><img class="icon alert__icon" src="./assets/img/i-warning.svg"/>
+                  <div class="alert_box">Доставка осуществляется только в следующие районы Зеленограда: 1,2,3,4, Общежитие МИЭТ <br /> Минимальная сумма заказа — 1000 руб
+                  </div>
+                </div>
+              </div>
+              <div class="section section_xs">
+                <div class="title-block title-block_between">
+                  <h1 class="f_subtitle f_mon cart__title">Оформление заказа</h1>
+                  <div class="total-price"><span class="f_xl_2 total-price__text">Cумма заказа</span><span class="f_subtitle f_mon total-price__price" data-cart-total="data-cart-total"></span></div>
+                </div>
+              </div>
+              <div class="section section_xxs">
+                <form class="form">
+                  <formfield>
+                    <label class="f_xl_2 label" for="cart-name">Имя</label>
+                    <input class="input input_lg" id="cart-name" type="text" placeholder="Константин Константинопольский" required="required"/>
+                  </formfield>
+                  <formfield>
+                    <label class="f_xl_2 label" for="cart-phone">Телефон</label>
+                    <input class="input input_m" id="cart-phone" type="text" placeholder="+7 999 999-99-99" required="required"/>
+                  </formfield>
+                  <formfield>
+                    <label class="f_xl_2 label" for="cart-address">Адрес</label>
+                    <div class="input input_lg input_container"><span style="color: #757575">Зеленоград,&nbsp;</span>
+                      <input class="input input_clear" id="cart-address" type="text" placeholder="к1206, 127" required="required"/>
+                    </div>
+                  </formfield>
+                  <div class="section section_m">
+                    <div class="form__actions">
+                      <button class="button button_red form_submit">Оформить заказ на сумму:&nbsp;<span data-cart-total="data-cart-total"></span>
+                      </button>
+                      <p class="f_sm f_medium f_mon form__politic">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки данных</a></p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section_lg"></section>
+      </main>
+    </div>
+    <script src="assets/js/libs.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

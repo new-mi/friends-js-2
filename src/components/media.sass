@@ -1,0 +1,388 @@
+@media (max-width: 1439px)
+  html
+    font-size: 16px
+
+  .promo-slider
+    &__title
+      font-size: 20vw
+    &__slide
+      padding: 0 20%
+      // height: auto
+    &__slider
+      margin: -4vw auto -9vw
+
+  .product-card
+    height: 22vw
+
+  .modal
+    &_close-out
+      .modal__close
+        left: auto
+        right: 20px
+        top: 10px
+        background: transparent
+
+@media (max-width: 993px)
+  html
+    font-size: 14px
+
+  .section
+    margin: 64px 0 0
+    &_xxxxs
+      margin: 16px 0 0
+    &_xxxs
+      margin: 24px 0 0
+    &_xxs
+      margin: 32px 0 0
+    &_xs
+      margin: 40px 0 0
+    &_s
+      margin: 56px 0 0
+    &_m
+      margin: 64px 0 0
+    &_lg
+      margin: 96px 0 0
+    &_xl
+      margin: 128px 0 0
+
+  .header
+    &__cart
+      .icon_cart-mobile
+        display: block
+      .text
+        display: none
+
+  .stocks-item
+    &__title
+      margin-bottom: $i
+    &__img
+      flex: 0 0 50%
+      margin-right: $i*6
+
+  .article
+    img
+      border-radius: 32px
+      margin-bottom: $i*3
+    h1
+      margin-bottom: $i*3
+    p
+      margin-bottom: $i*2
+
+  .block-color
+    $self: &
+    &_text
+      border-radius: $i*2
+      padding: $i*4 16px
+    &_blockquote
+      padding: $i*4
+      #{$self}__inner
+        border-radius: 3000px
+        overflow: hidden
+
+  .gallery
+    &__img
+      margin-bottom: $i*2
+
+  .blockquote
+    &__img
+      width: 260px
+      height: 260px
+      margin-right: $i*4
+
+  .product-card
+    height: 26vw
+
+  .footer
+    &__inner
+      flex-direction: column-reverse
+    &__item
+      margin: 0
+      &_map
+        margin-bottom: $i*4
+    &__box
+      height: 300px
+
+  .map
+    width: 100%
+    &__wrap
+      padding-bottom: 300px
+    &__box
+      border-radius: 3000px
+
+  .cart-item
+    &__price
+      margin-left: $i*2
+    &__delete
+      margin-top: 2px
+      margin-right: 0
+
+  .header-cart
+    &__item_back
+      top: $i*4
+
+  .footer
+    margin-top: 128px
+
+  .ingredients
+    font-size: 0.86rem
+
+  .cart-item
+    &__descr
+      font-size: 0.857rem
+
+  .cart-item-dop
+    &__price,
+    &__btn
+      font-size: 0.857rem
+    &__title
+      font-size: 1.143rem
+
+
+@media (max-width: 769px)
+  .section
+    margin: 48px 0 0
+    &_xxxxs
+      margin: 16px 0 0
+    &_xxxs
+      margin: 16px 0 0
+    &_xxs
+      margin: 24px 0 0
+    &_xs
+      margin: 32px 0 0
+    &_s
+      margin: 40px 0 0
+    &_m
+      margin: 48px 0 0
+    &_lg
+      margin: 64px 0 0
+    &_xl
+      margin: 80px 0 0
+
+  .header
+    &__inner
+      flex-wrap: wrap
+      &_nav
+        margin-top: $i*4
+        order: 1
+        width: 100%
+
+  .stocks-item
+    $self: &
+    flex-direction: column
+    &.reverse
+      flex-direction: column
+      #{$self}__img
+        margin-left: 0
+    &__img
+      margin-right: 0
+      margin-bottom: $i*2
+
+  .stocks-slider
+    &__navs
+      display: flex
+      justify-content: center
+
+  .advantages
+    .row
+      flex-wrap: nowrap
+      overflow-x: scroll
+      padding-bottom: 10px
+    &__item
+      flex-shrink: 0
+      &-name
+        text-align: center
+
+  .socials-block
+    flex-wrap: wrap
+    &__title
+      width: 100%
+      text-align: center
+      margin-bottom: $i*2
+    &__item
+      margin-bottom: $i*2
+
+  .block-color
+    $self: &
+    &_blockquote
+      padding: 16px
+      border-bottom-left-radius: 0
+      border-bottom-right-radius: 0
+      #{$self}__inner
+        border-radius: 3000px 3000px 0 0
+        overflow: hidden
+
+  .blockquote
+    &__title
+      font: 700 1.333rem/1.5 $FMA
+    &__item
+      flex-direction: column
+      align-items: center
+    &__info
+      width: 420px
+    &__img
+      width: 160px
+      height: 160px
+      margin-right: 0
+    &__quote
+      width: $i*5
+
+  .product-card
+    height: 44vw
+    &__img
+      width: 40%
+
+  .chat-block
+    &__thumb
+      width: 64px
+      height: 64px
+      margin-right: $i*2
+    &__img-menu
+      margin: 0 auto $i*2
+
+  .cart
+    padding: $i*4
+    border-radius: $i*2
+
+  .cart-item
+    &__row
+      flex-wrap: wrap
+    &__info
+      width: 100%
+      order: -1
+      margin-bottom: $i*2
+    &__counter
+      margin-left: 0
+      margin-right: auto
+    &__price
+      margin-left: 0
+    &__ingredients
+      margin-top: $i*2
+
+  .title-block
+    flex-wrap: wrap
+
+  .form
+    align-items: flex-start
+    formfield
+      width: 100%
+      align-items: flex-start
+      flex-direction: column
+      margin-bottom: $i*2
+    .label
+      margin-bottom: $i
+    .input
+      max-width: 100%
+    .section
+      width: 100%
+
+  .header-cart
+    &__button-back
+      padding: $i*2
+      .icon
+        margin: 0
+      .text
+        display: none
+
+  .footer
+    margin-top: 80px
+
+  .modal
+    &_close-out
+      .modal__close
+        right: 0
+        top: 0
+
+@media (max-width: 479px)
+  .blockquote
+    &__info
+      width: 100%
+    &__item
+      padding: 0 $i
+
+  .product-card
+    height: 50vw
+    &__img
+      width: 50%
+
+  .footer
+    $self: &
+    &__box
+      height: auto
+      padding: $i*4
+    &__logo
+      margin-bottom: $i*2
+    &__nav
+      flex-wrap: wrap
+      margin-bottom: $i*2
+      &-item
+        width: 40%
+        margin: $i 5%
+        &:not(:last-child)
+          margin-right: 0
+    &__contacts
+      flex-direction: column
+      margin-bottom: $i*2
+      #{$self}__contact
+        margin-bottom: $i
+        &:not(:last-child)
+          margin-right: 0
+    &__actions
+      margin-bottom: $i*2
+    &__bottom
+      flex-wrap: wrap
+      & > *
+        margin: 0 $i*2 $i
+        &:not(:last-child)
+          margin-right: 0
+
+  .map
+    &__wrap
+      padding-bottom: 200px
+
+  .chat-block
+    &__thumb
+      width: 32px
+      height: 32px
+      margin-right: $i
+    &__msgs-item
+      padding: $i*2
+
+  .alert
+    padding: $i*2
+    align-items: flex-start
+    &__icon
+      margin-top: 3px
+      margin-right: $i*2
+
+  .cart
+    padding: $i*2
+
+  .cart-item
+    flex-direction: column
+    &__thumb
+      margin: 0 auto
+    &__counter
+      // margin-right: 0
+      // margin-left: auto
+    &__price
+      width: auto
+      // order: -1
+      // text-align: left
+
+  .cart-item-dop
+    max-width: 220px
+
+  .total-price
+    flex-wrap: wrap
+
+  .form
+    &_submit
+      white-space: normal
+      flex-wrap: wrap
+
+  .arts
+    &__item
+      &_2
+        width: 120px
+      &_3
+        width: 90px

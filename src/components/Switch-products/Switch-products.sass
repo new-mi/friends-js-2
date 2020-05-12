@@ -1,0 +1,25 @@
+.switch-products
+  &__tabs
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    margin-bottom: $i*9
+  &__tab
+    color: $text-light-2
+    margin: 0 $i*3
+    &.active
+      color: $text-dark
+      text-decoration: none
+      pointer-events: none
+      .icon
+        opacity: 1
+    .icon
+      width: 48px
+      height: 48px
+      margin-bottom: -5px
+      opacity: 0.2
+  &__item
+    display: none
+    &.visible
+      display: block

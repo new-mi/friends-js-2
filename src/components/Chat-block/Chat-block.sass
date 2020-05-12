@@ -1,0 +1,33 @@
+.chat-block
+  &__row
+    display: flex
+    align-items: flex-start
+  &__thumb
+    flex: 0 0 auto
+    width: 96px
+    height: 96px
+    margin-right: $i*6
+    border-radius: 50%
+    overflow: hidden
+  &__msgs
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &-item
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      padding: $i*2 $i*4
+      margin-bottom: $i*2
+      background-color: #FFF8EB
+      border-radius: $i*1.5 $i*1.5 $i*1.5 0
+      a
+        color: $red-light
+        &:hover
+          color: $red-dark
+        &:active
+          color: darken($red-dark, 3%)
+  &__img-menu
+    margin-right: $i*2
+    & + .button
+      margin: 0 auto

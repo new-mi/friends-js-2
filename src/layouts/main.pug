@@ -1,0 +1,29 @@
+include ../components/index
+block variables
+
+doctype html
+html(lang="ru-RU")
+  head
+    meta(charset="utf-8")
+    title #{title}
+    <!--[if IE]>
+    meta(http-equiv='X-UA-Compatible' content="IE = edge")
+    <![endif]-->
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(name="keywords" content="")
+    link(rel="stylesheet" type='text/css' href="assets/css/libs.min.css")
+    link(rel="stylesheet" type='text/css' href="assets/css/main.css")
+
+    <!--[if lt IE 9]>
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
+    <![endif]-->
+  body(class=pageClass)
+    .page
+      include ../components/Header/Header
+      main
+        block content
+      include ../components/Footer/Footer
+    script(src="https://api-maps.yandex.ru/2.1/?apikey=bf4d1dda-4c4e-459a-a5a0-f8d22b366ab8&lang=ru_RU")
+    script(src="assets/js/libs.min.js")
+    script(src="assets/js/main.js")
+    block script
