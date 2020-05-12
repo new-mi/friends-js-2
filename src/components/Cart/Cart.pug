@@ -1,22 +1,22 @@
 mixin Cart
   .cart(data-form-success)
-      img.cart_art.cart_art_1(src="./assets/img/art-elements/hotdog.png", alt="")
-      img.cart_art.cart_art_2(src="./assets/img/art-elements/burger.png", alt="")
-      img.cart_art.cart_art_3(src="./assets/img/art-elements/kiwi-v.png", alt="")
-      img.cart_art.cart_art_4(src="./assets/img/art-elements/kiwi-h.png", alt="")
-      .cart__success
-        p.f_title.cart__success-title Спасибо!
-        p.cart__success-text Мы свяжемся с вами в ближайшее время для подтверждения заказа
-        +Button-red.cart__success-button Вернуться на сайт
+    img.cart_art.cart_art_1(src="./assets/img/art-elements/hotdog.png" alt="")
+    img.cart_art.cart_art_2(src="./assets/img/art-elements/burger.png" alt="")
+    img.cart_art.cart_art_3(src="./assets/img/art-elements/kiwi-v.png" alt="")
+    img.cart_art.cart_art_4(src="./assets/img/art-elements/kiwi-h.png" alt="")
+    .cart__success
+      p.f_title.cart__success-title Спасибо!
+      p.cart__success-text Мы свяжемся с вами в ближайшее время для подтверждения заказа
+      +Button-red.cart__success-button Вернуться на сайт
   .cart(data-form)
     .title-block.title-block_left
-       h1.f_subtitle.f_mon.cart__title Ваш заказ
+      h1.f_subtitle.f_mon.cart__title Ваш заказ
     .section.section_xxxxs
       .cart__orders(data-cart)
 
         //- .cart-item
         //-   .cart-item__thumb
-        //-     img(src="./assets/img/products/p-1.png", alt="")
+        //-     img(src="./assets/img/products/p-1.png" alt="")
         //-   .cart-item__box
         //-     .cart-item__row
         //-       .cart-item__info
@@ -42,15 +42,30 @@ mixin Cart
       .title-block.title-block_between
         h2.f_xl.f_mon.cart__subtitle Дополнить заказ
         .cart__dop-navs
-          img.cart__dop-nav.cart__dop-nav_prev(src="./assets/img/arrow-next-white.svg")
-          img.cart__dop-nav.cart__dop-nav_next(src="./assets/img/arrow-next-white.svg")
+          .stocks-slider__nav.stocks-slider__nav_prev
+            svg(viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(fill-rule="evenodd" clip-rule="evenodd" d="M20.3491 10.7705C20.2481 11.0025 20.1003 11.2131 19.9139 11.3902L11.4279 19.5019C11.0507 19.8502 10.5455 20.0429 10.0211 20.0385C9.49668 20.0341 8.99506 19.8331 8.62424 19.4786C8.25342 19.1242 8.04309 18.6447 8.03853 18.1434C8.03397 17.6421 8.23556 17.1592 8.59988 16.7986L13.6719 11.9504H2.49988C1.96944 11.9504 1.46074 11.7489 1.08566 11.3904C0.710592 11.0319 0.499878 10.5456 0.499878 10.0386C0.499878 9.53154 0.710592 9.04527 1.08566 8.68674C1.46074 8.32821 1.96944 8.12679 2.49988 8.12679H13.6719L8.59988 3.2785C8.23556 2.91793 8.03397 2.43501 8.03853 1.93375C8.04309 1.43248 8.25342 0.952984 8.62424 0.598524C8.99506 0.244063 9.49668 0.0430023 10.0211 0.0386465C10.5455 0.0342906 11.0507 0.226989 11.4279 0.575236L19.9139 8.68694C20.1003 8.86407 20.2481 9.07468 20.3491 9.30664C20.45 9.5386 20.5019 9.78735 20.5019 10.0386C20.5019 10.2898 20.45 10.5385 20.3491 10.7705Z")
+          .stocks-slider__nav.stocks-slider__nav_next
+            svg(viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(fill-rule="evenodd" clip-rule="evenodd" d="M20.3491 10.7705C20.2481 11.0025 20.1003 11.2131 19.9139 11.3902L11.4279 19.5019C11.0507 19.8502 10.5455 20.0429 10.0211 20.0385C9.49668 20.0341 8.99506 19.8331 8.62424 19.4786C8.25342 19.1242 8.04309 18.6447 8.03853 18.1434C8.03397 17.6421 8.23556 17.1592 8.59988 16.7986L13.6719 11.9504H2.49988C1.96944 11.9504 1.46074 11.7489 1.08566 11.3904C0.710592 11.0319 0.499878 10.5456 0.499878 10.0386C0.499878 9.53154 0.710592 9.04527 1.08566 8.68674C1.46074 8.32821 1.96944 8.12679 2.49988 8.12679H13.6719L8.59988 3.2785C8.23556 2.91793 8.03397 2.43501 8.03853 1.93375C8.04309 1.43248 8.25342 0.952984 8.62424 0.598524C8.99506 0.244063 9.49668 0.0430023 10.0211 0.0386465C10.5455 0.0342906 11.0507 0.226989 11.4279 0.575236L19.9139 8.68694C20.1003 8.86407 20.2481 9.07468 20.3491 9.30664C20.45 9.5386 20.5019 9.78735 20.5019 10.0386C20.5019 10.2898 20.45 10.5385 20.3491 10.7705Z")
+
     .section.section_xxxxs
       .cart__dop-slider.swiper-container
-        .swiper-wrapper(data-dop-products-list = 'p01,p02,p03,p01,p02')
+        .swiper-wrapper
+          .swiper-slide
+            span(data-products-item-dop="burger01")
+          .swiper-slide
+            span(data-products-item-dop="burger02")
+          .swiper-slide
+            span(data-products-item-dop="burger03")
+          .swiper-slide
+            span(data-products-item-dop="p01")
+          .swiper-slide
+            span(data-products-item-dop="p02")
           //- .swiper-slide.cart-item-dop
           //-   .cart-item-dop__row
           //-     .cart-item-dop__thumb
-          //-       img(src="./assets/img/products/p-1.png", alt="")
+          //-       img(src="./assets/img/products/p-1.png" alt="")
           //-     .cart-item-dop__info
           //-       .f_sm.f_ma.f_sbold.cart-item-dop__title Чизбургер
           //-       .f_xs.f_mom.f_sbold.cart-item-dop__price 299 руб
@@ -84,4 +99,3 @@ mixin Cart
             +Button-red.form_submit Оформить заказ на сумму:&nbsp;
               span(data-cart-total)
             p.f_sm.f_medium.f_mon.form__politic Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки данных</a>
-

@@ -39,17 +39,17 @@
     width: 100%
     height: 2px
     background-color: $grey
-  &__dop-nav
+  &__dop-slider
+    .swiper-slide
+      width: auto
+  &__dop-navs
     position: relative
-    width: 26px
-    height: 26px
-    cursor: pointer
-    &.swiper-button-disabled
-      opacity: 0.6
-      pointer-events: none
-    &_prev
-      transform: rotate(180deg)
-      margin-right: $i*1.5
+    .stocks-slider__nav
+      width: 26px
+      height: 26px
+      padding: 5px
+      &_next
+        margin-left: $i*1.5
 
   &__success
     display: flex
@@ -67,4 +67,3 @@
     display: flex
     &_right
       justify-content: flex-end
-

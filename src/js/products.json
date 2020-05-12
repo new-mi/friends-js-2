@@ -1,34 +1,12 @@
 [
   {
-    "id": "p01",
-    "name": "Чизбургер",
-    "descr": "Котлета из нежного ягненка, соус, сальса, кинза",
-    "img": "./assets/img/products/p-1.png",
-    "price": 299,
+    "id": "burger01",
+    "name": "Френд'с",
+    "descr": "",
+    "img": "./assets/img/products/burger01.png",
+    "price": 339,
     "count": 1,
     "cartType": "semicircle",
-    "isNew": true,
-    "ingredients": [
-      {
-        "name": "Сыр",
-        "inProduct": true,
-        "price": 0
-      },
-      {
-        "name": "Бекон",
-        "inProduct": true,
-        "price": 30
-      }
-    ]
-  },
-  {
-    "id": "p02",
-    "name": "Ролл",
-    "descr": "Говяжья котлета с соусом «Айоли»",
-    "img": "./assets/img/products/p-3.png",
-    "price": 299,
-    "count": 1,
-    "cartType": "ellipse",
     "isNew": false,
     "ingredients": [
       {
@@ -38,19 +16,170 @@
       },
       {
         "name": "Бекон",
-        "inProduct": false,
+        "inProduct": true,
         "price": 30
       }
     ]
   },
   {
-    "id": "p03",
-    "name": "Френд'с",
-    "descr": "Говяжья котлета с соусом «Айоли»",
-    "img": "./assets/img/products/p-2.png",
+    "id": "burger02",
+    "name": "Big Bro",
+    "descr": "",
+    "img": "./assets/img/products/burger02.png",
+    "price": 329,
+    "count": 1,
+    "cartType": "semicircle",
+    "isNew": false
+  },
+  {
+    "id": "burger03",
+    "name": "Мексиканский",
+    "descr": "",
+    "img": "./assets/img/products/burger03.png",
     "price": 299,
     "count": 1,
     "cartType": "semicircle",
+    "isNew": false
+  },
+  {
+    "id": "burger04",
+    "name": "BBQ",
+    "descr": "",
+    "img": "./assets/img/products/burger04.png",
+    "price": 299,
+    "count": 1,
+    "cartType": "semicircle",
+    "isNew": false
+  },
+  {
+    "id": "burger05",
+    "name": "Машрум",
+    "descr": "",
+    "img": "./assets/img/products/burger05.png",
+    "price": 299,
+    "count": 1,
+    "cartType": "semicircle",
+    "isNew": false
+  },
+  {
+    "id": "burger06",
+    "name": "Чикен",
+    "descr": "",
+    "img": "./assets/img/products/burger06.png",
+    "price": 299,
+    "count": 1,
+    "cartType": "semicircle",
+    "isNew": false
+  },
+  {
+    "id": "burger07",
+    "name": "Острый",
+    "descr": "",
+    "img": "./assets/img/products/burger07.png",
+    "price": 299,
+    "count": 1,
+    "cartType": "semicircle",
+    "isNew": false
+  },
+  {
+    "id": "burger08",
+    "name": "Чизбургер",
+    "descr": "",
+    "img": "./assets/img/products/burger08.png",
+    "price": 299,
+    "count": 1,
+    "cartType": "semicircle",
+    "isNew": false
+  },
+  {
+    "id": "burger09",
+    "name": "Lamb",
+    "descr": "",
+    "img": "./assets/img/products/burger09.png",
+    "price": 299,
+    "count": 1,
+    "cartType": "semicircle",
+    "isNew": false
+  },
+  {
+    "id": "burger10",
+    "name": "Хот-Дог",
+    "descr": "",
+    "img": "./assets/img/products/burger10.png",
+    "price": 189,
+    "count": 1,
+    "cartType": "ellipse",
+    "isNew": false
+  },
+
+  {
+    "id": "breakfast01",
+    "name": "Английский",
+    "descr": "",
+    "img": "./assets/img/products/breakfast01.png",
+    "price": 399,
+    "count": 1,
+    "cartType": "empty",
+    "isNew": false
+  },
+  {
+    "id": "breakfast02",
+    "name": "Скандинавский",
+    "descr": "",
+    "img": "./assets/img/products/breakfast02.png",
+    "price": 399,
+    "count": 1,
+    "cartType": "empty",
+    "isNew": false
+  },
+  {
+    "id": "breakfast03",
+    "name": "Американский Big",
+    "descr": "",
+    "img": "./assets/img/products/breakfast03.png",
+    "price": 399,
+    "count": 1,
+    "cartType": "empty",
+    "isNew": false
+  },
+  {
+    "id": "breakfast04",
+    "name": "Френд'с",
+    "descr": "",
+    "img": "./assets/img/products/breakfast04.png",
+    "price": 299,
+    "count": 1,
+    "cartType": "empty",
+    "isNew": false
+  },
+  {
+    "id": "breakfast05",
+    "name": "Ранч",
+    "descr": "",
+    "img": "./assets/img/products/breakfast05.png",
+    "price": 199,
+    "count": 1,
+    "cartType": "empty",
+    "isNew": false
+  },
+  {
+    "id": "breakfast06",
+    "name": "Овсяная каша",
+    "descr": "",
+    "img": "./assets/img/products/breakfast06.png",
+    "price": 99,
+    "count": 1,
+    "cartType": "empty",
+    "isNew": false
+  },
+  {
+    "id": "breakfast07",
+    "name": "Утренний сэндвич-ролл",
+    "descr": "",
+    "img": "./assets/img/products/breakfast07.png",
+    "price": 199,
+    "count": 1,
+    "cartType": "empty",
     "isNew": false
   }
 ]

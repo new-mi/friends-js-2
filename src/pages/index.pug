@@ -3,6 +3,7 @@ extends ../layouts/main
 block variables
   - var title = "Главная"
   - var pageClass = ''
+  - var activePage = 'index'
 
 block content
   .arts
@@ -23,7 +24,28 @@ block content
           a.f_title.switch-products__tab(href="#") Завтраки
         .switch-products__content(data-switcher-content)
           .switch-products__item
-            .row(data-products-list="p01,p02,p03")
+            .row
+              .col-6.col-md-12
+                span(data-products-item="burger01")
+              .col-6.col-md-12
+                span(data-products-item="burger02")
+              .col-6.col-md-12
+                span(data-products-item="burger03")
+              .col-6.col-md-12
+                span(data-products-item="burger04")
+              .col-6.col-md-12
+                span(data-products-item="burger05")
+              .col-6.col-md-12
+                span(data-products-item="burger06")
+              .col-6.col-md-12
+                span(data-products-item="burger07")
+              .col-6.col-md-12
+                span(data-products-item="burger08")
+              .col-6.col-md-12
+                span(data-products-item="burger09")
+              .col-6.col-md-12
+                span(data-products-item="burger10")
+
               //- .col-6
               //-   .product-card
               //-     .product-card__img
@@ -37,10 +59,29 @@ block content
               //-       .product-card__actions
               //-         +Button-product-card.product-card__button В корзину
           .switch-products__item
-            .row(data-products-list="p03")
+            .row
+              .col-6.col-md-12
+                span(data-products-item="breakfast01")
+              .col-6.col-md-12
+                span(data-products-item="breakfast02")
+              .col-6.col-md-12
+                span(data-products-item="breakfast03")
+              .col-6.col-md-12
+                span(data-products-item="breakfast04")
+              .col-6.col-md-12
+                span(data-products-item="breakfast05")
+              .col-6.col-md-12
+                span(data-products-item="breakfast06")
+              .col-6.col-md-12
+                span(data-products-item="breakfast07")
   section.section.section_lg
-    .container
-      +Promo-slider
+    .promo-slider
+      .container
+        p.f_title.promo-slider__title.promo-slider__title_first Френдс
+      .container_fluid
+        +Promo-slider
+      .container
+        p.f_title.promo-slider__title.promo-slider__title_second Friends
   section.section.section_lg
     .container
       +Advantages
@@ -68,4 +109,3 @@ block content
     .container
       +Block-color.block-color_blockquote
         +Blockquote-slider
-

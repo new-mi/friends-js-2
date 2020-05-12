@@ -5,7 +5,23 @@
     <title>Главная</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=""><!--favicon-->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!--favicon end-->
     <link rel="stylesheet" type="text/css" href="assets/css/libs.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
@@ -17,7 +33,7 @@
           <div class="header__inner">
             <div class="header__inner_logo"><a class="logo header__logo" href="index.html"><img src="./assets/img/logo-eng.svg" alt="Friends"/></a>
             </div>
-            <div class="header__inner_nav header__nav"><a class="button button_white button_small header__nav-item active" href="stocks.html">Акции</a><a class="button button_white button_small header__nav-item" href="menu-cafe.html">Меню</a><a class="button button_white button_small header__nav-item" href="contacts.html">Контакты</a>
+            <div class="header__inner_nav header__nav"><a class="button button_white button_small header__nav-item" href="stocks.html">Акции</a><a class="button button_white button_small header__nav-item" href="menu-cafe.html">Меню</a><a class="button button_white button_small header__nav-item" href="contacts.html">Контакты</a>
             </div>
             <div class="header__inner_cart">
               <div class="header__inner-cart-wrap"><a class="button button_purple header__cart" href="cart.html"><img class="icon icon_cart-mobile first" src="./assets/img/i-cart.svg"/><span class="text">Корзина</span><span class="icon icon_cart last" data-cart-count="data-cart-count"></span></a>
@@ -39,7 +55,18 @@
                   </div>
                   <div class="stocks-item__descr">
                     <div class="stocks-item__box">
-                      <div class="stocks-slider__navs"><img class="stocks-slider__nav stocks-slider__nav_prev" src="./assets/img/arrow-next.svg"/><img class="stocks-slider__nav stocks-slider__nav_next" src="./assets/img/arrow-next.svg"/></div>
+                      <div class="stocks-slider__navs">
+                        <div class="stocks-slider__nav stocks-slider__nav_prev">
+                          <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3491 10.7705C20.2481 11.0025 20.1003 11.2131 19.9139 11.3902L11.4279 19.5019C11.0507 19.8502 10.5455 20.0429 10.0211 20.0385C9.49668 20.0341 8.99506 19.8331 8.62424 19.4786C8.25342 19.1242 8.04309 18.6447 8.03853 18.1434C8.03397 17.6421 8.23556 17.1592 8.59988 16.7986L13.6719 11.9504H2.49988C1.96944 11.9504 1.46074 11.7489 1.08566 11.3904C0.710592 11.0319 0.499878 10.5456 0.499878 10.0386C0.499878 9.53154 0.710592 9.04527 1.08566 8.68674C1.46074 8.32821 1.96944 8.12679 2.49988 8.12679H13.6719L8.59988 3.2785C8.23556 2.91793 8.03397 2.43501 8.03853 1.93375C8.04309 1.43248 8.25342 0.952984 8.62424 0.598524C8.99506 0.244063 9.49668 0.0430023 10.0211 0.0386465C10.5455 0.0342906 11.0507 0.226989 11.4279 0.575236L19.9139 8.68694C20.1003 8.86407 20.2481 9.07468 20.3491 9.30664C20.45 9.5386 20.5019 9.78735 20.5019 10.0386C20.5019 10.2898 20.45 10.5385 20.3491 10.7705Z"></path>
+                          </svg>
+                        </div>
+                        <div class="stocks-slider__nav stocks-slider__nav_next">
+                          <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3491 10.7705C20.2481 11.0025 20.1003 11.2131 19.9139 11.3902L11.4279 19.5019C11.0507 19.8502 10.5455 20.0429 10.0211 20.0385C9.49668 20.0341 8.99506 19.8331 8.62424 19.4786C8.25342 19.1242 8.04309 18.6447 8.03853 18.1434C8.03397 17.6421 8.23556 17.1592 8.59988 16.7986L13.6719 11.9504H2.49988C1.96944 11.9504 1.46074 11.7489 1.08566 11.3904C0.710592 11.0319 0.499878 10.5456 0.499878 10.0386C0.499878 9.53154 0.710592 9.04527 1.08566 8.68674C1.46074 8.32821 1.96944 8.12679 2.49988 8.12679H13.6719L8.59988 3.2785C8.23556 2.91793 8.03397 2.43501 8.03853 1.93375C8.04309 1.43248 8.25342 0.952984 8.62424 0.598524C8.99506 0.244063 9.49668 0.0430023 10.0211 0.0386465C10.5455 0.0342906 11.0507 0.226989 11.4279 0.575236L19.9139 8.68694C20.1003 8.86407 20.2481 9.07468 20.3491 9.30664C20.45 9.5386 20.5019 9.78735 20.5019 10.0386C20.5019 10.2898 20.45 10.5385 20.3491 10.7705Z"></path>
+                          </svg>
+                        </div>
+                      </div>
                       <h3 class="f_title stocks-item__title">Новинки!</h3>
                       <p class="stocks-item__text">Современные технологии достигли такого уровня, что разбавленное изрядной долей эмпатии, рациональное мышление требует анализа как.</p>
                       <div class="stocks-item__actions"><a class="button button_red" href="stock-page.html">Подробнее</a>
@@ -54,7 +81,18 @@
                   </div>
                   <div class="stocks-item__descr">
                     <div class="stocks-item__box">
-                      <div class="stocks-slider__navs"><img class="stocks-slider__nav stocks-slider__nav_prev" src="./assets/img/arrow-next.svg"/><img class="stocks-slider__nav stocks-slider__nav_next" src="./assets/img/arrow-next.svg"/></div>
+                      <div class="stocks-slider__navs">
+                        <div class="stocks-slider__nav stocks-slider__nav_prev">
+                          <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3491 10.7705C20.2481 11.0025 20.1003 11.2131 19.9139 11.3902L11.4279 19.5019C11.0507 19.8502 10.5455 20.0429 10.0211 20.0385C9.49668 20.0341 8.99506 19.8331 8.62424 19.4786C8.25342 19.1242 8.04309 18.6447 8.03853 18.1434C8.03397 17.6421 8.23556 17.1592 8.59988 16.7986L13.6719 11.9504H2.49988C1.96944 11.9504 1.46074 11.7489 1.08566 11.3904C0.710592 11.0319 0.499878 10.5456 0.499878 10.0386C0.499878 9.53154 0.710592 9.04527 1.08566 8.68674C1.46074 8.32821 1.96944 8.12679 2.49988 8.12679H13.6719L8.59988 3.2785C8.23556 2.91793 8.03397 2.43501 8.03853 1.93375C8.04309 1.43248 8.25342 0.952984 8.62424 0.598524C8.99506 0.244063 9.49668 0.0430023 10.0211 0.0386465C10.5455 0.0342906 11.0507 0.226989 11.4279 0.575236L19.9139 8.68694C20.1003 8.86407 20.2481 9.07468 20.3491 9.30664C20.45 9.5386 20.5019 9.78735 20.5019 10.0386C20.5019 10.2898 20.45 10.5385 20.3491 10.7705Z"></path>
+                          </svg>
+                        </div>
+                        <div class="stocks-slider__nav stocks-slider__nav_next">
+                          <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3491 10.7705C20.2481 11.0025 20.1003 11.2131 19.9139 11.3902L11.4279 19.5019C11.0507 19.8502 10.5455 20.0429 10.0211 20.0385C9.49668 20.0341 8.99506 19.8331 8.62424 19.4786C8.25342 19.1242 8.04309 18.6447 8.03853 18.1434C8.03397 17.6421 8.23556 17.1592 8.59988 16.7986L13.6719 11.9504H2.49988C1.96944 11.9504 1.46074 11.7489 1.08566 11.3904C0.710592 11.0319 0.499878 10.5456 0.499878 10.0386C0.499878 9.53154 0.710592 9.04527 1.08566 8.68674C1.46074 8.32821 1.96944 8.12679 2.49988 8.12679H13.6719L8.59988 3.2785C8.23556 2.91793 8.03397 2.43501 8.03853 1.93375C8.04309 1.43248 8.25342 0.952984 8.62424 0.598524C8.99506 0.244063 9.49668 0.0430023 10.0211 0.0386465C10.5455 0.0342906 11.0507 0.226989 11.4279 0.575236L19.9139 8.68694C20.1003 8.86407 20.2481 9.07468 20.3491 9.30664C20.45 9.5386 20.5019 9.78735 20.5019 10.0386C20.5019 10.2898 20.45 10.5385 20.3491 10.7705Z"></path>
+                          </svg>
+                        </div>
+                      </div>
                       <h3 class="f_title stocks-item__title">Акции</h3>
                       <p class="stocks-item__text">Современные технологии достигли такого уровня, что разбавленное изрядной долей эмпатии, рациональное мышление требует анализа как.</p>
                       <div class="stocks-item__actions"><a class="button button_red" href="stock-page.html">Подробнее</a>
@@ -73,19 +111,40 @@
               <nav class="switch-products__tabs" data-switcher-nav><a class="f_title switch-products__tab" href="#">Бургеры<img class="icon last" src="./assets/img/i-smile.png"></a><a class="f_title switch-products__tab" href="#">Завтраки</a></nav>
               <div class="switch-products__content" data-switcher-content>
                 <div class="switch-products__item">
-                  <div class="row" data-products-list="p01,p02,p03"></div>
+                  <div class="row">
+                    <div class="col-6 col-md-12"><span data-products-item="burger01"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="burger02"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="burger03"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="burger04"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="burger05"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="burger06"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="burger07"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="burger08"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="burger09"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="burger10"></span></div>
+                  </div>
                 </div>
                 <div class="switch-products__item">
-                  <div class="row" data-products-list="p03"></div>
+                  <div class="row">
+                    <div class="col-6 col-md-12"><span data-products-item="breakfast01"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="breakfast02"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="breakfast03"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="breakfast04"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="breakfast05"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="breakfast06"></span></div>
+                    <div class="col-6 col-md-12"><span data-products-item="breakfast07"></span></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section class="section section_lg">
-          <div class="container">
-            <div class="promo-slider">
+          <div class="promo-slider">
+            <div class="container">
               <p class="f_title promo-slider__title promo-slider__title_first">Френдс</p>
+            </div>
+            <div class="container_fluid">
               <div class="promo-slider__slider swiper-container">
                 <div class="promo-slider__slider-wrapper swiper-wrapper">
                   <div class="swiper-slide promo-slider__slide promo-slider__slide">
@@ -96,6 +155,8 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="container">
               <p class="f_title promo-slider__title promo-slider__title_second">Friends</p>
             </div>
           </div>

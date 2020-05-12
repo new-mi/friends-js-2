@@ -4,10 +4,9 @@ header.header
       .header__inner_logo
         +Logo.header__logo(href="index.html")
       .header__inner_nav.header__nav
-        //- +Button-header-nav(href="/delivery.html") Доставка
-        +Button-header-nav.active(href="stocks.html") Акции
-        +Button-header-nav(href="menu-cafe.html") Меню
-        +Button-header-nav(href="contacts.html") Контакты
+        +Button-header-nav(href="stocks.html" class=activePage=='stocks' ? 'active' : '') Акции
+        +Button-header-nav(href="menu-cafe.html" class=activePage=='menu' ? 'active' : '') Меню
+        +Button-header-nav(href="contacts.html" class=activePage=='contacts' ? 'active' : '') Контакты
       .header__inner_cart
         .header__inner-cart-wrap
           +Button-header-cart(href="cart.html")

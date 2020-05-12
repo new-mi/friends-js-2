@@ -14,11 +14,19 @@
     height: 100%
     background-color: $grey
     z-index: -1
-    border-radius: 350px 350px 24px 24px
     transition: background-color 0.2s ease
+  &_empty
+    &::before
+      content: none
+    #{$self}__img
+      border-radius: $i*4
+      overflow: hidden
+  &_semicircle
+    &::before
+      border-radius: 350px 350px 24px 24px
   &_ellipse
     &::before
-       border-radius: 350px
+      border-radius: 350px
   &:hover
     &::before
       background-color: $orange-light
@@ -27,8 +35,11 @@
     #{$self}__vapor
       opacity: 1
   &__img
+    flex-shrink: 0
     position: relative
-    width: 60%
+    width: 20vw
+    max-width: 300px
+    margin-right: $i*4
     img
       width: 100%
   &__vapor
@@ -41,6 +52,7 @@
     transition: opacity 0.2s ease
   &__title
     margin-bottom: $i
+    word-break: break-all
   &__info
     display: flex
     align-items: center
