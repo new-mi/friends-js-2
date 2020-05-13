@@ -705,7 +705,7 @@ class Cart {
     if (!this.cart.length) return "Корзина пустая";
     let res = "";
     this.cart.forEach((card) => {
-      res += this.getReasultItem(card) + "\n\n";
+      res += this.getTextReasultItem(card) + "\n\n";
     });
     res = res.slice(0, -1);
     return res;
@@ -715,7 +715,7 @@ class Cart {
     if (!product) return;
     return `${product.type} ${product.name}${
       product.ingredients
-        ? "\n" + this.getReasultIngredients(product.ingredients)
+        ? "\n" + this.getTextReasultIngredients(product.ingredients)
         : ""
     }\nКолличество: ${product.count}\nСтоимость: ${product.total}руб`;
   };
@@ -950,6 +950,13 @@ const modalImg = document.querySelector("[data-src-modal]");
     modalBox.openModal("image");
   });
 });
+
+var mySwiper = new Swiper ('.promo-slider__slider.swiper-container', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+})
 
 class SHBlock {
   constructor(domElement) {
@@ -1230,10 +1237,3 @@ class Toast {
 }
 
 const toast = new Toast("#toast");
-
-var mySwiper = new Swiper ('.promo-slider__slider.swiper-container', {
-  loop: true,
-  autoplay: {
-    delay: 5000,
-  },
-})

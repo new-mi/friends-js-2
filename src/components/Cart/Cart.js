@@ -640,7 +640,7 @@ class Cart {
     if (!this.cart.length) return "Корзина пустая";
     let res = "";
     this.cart.forEach((card) => {
-      res += this.getReasultItem(card) + "\n\n";
+      res += this.getTextReasultItem(card) + "\n\n";
     });
     res = res.slice(0, -1);
     return res;
@@ -650,7 +650,7 @@ class Cart {
     if (!product) return;
     return `${product.type} ${product.name}${
       product.ingredients
-        ? "\n" + this.getReasultIngredients(product.ingredients)
+        ? "\n" + this.getTextReasultIngredients(product.ingredients)
         : ""
     }\nКолличество: ${product.count}\nСтоимость: ${product.total}руб`;
   };
