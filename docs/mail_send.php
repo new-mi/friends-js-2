@@ -23,7 +23,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
  * INIT DATA
  */
 //Send mail by that mailboxes.
-$admin_emails = array('penshin@websterstd.com');
+$admin_emails = array('vm@websterstd.com');
 //Check required variables.
 $required_vars = array('name', 'phone', 'address');
 //Project name
