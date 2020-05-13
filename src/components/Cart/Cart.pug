@@ -82,18 +82,18 @@ mixin Cart
           span.f_xl_2.total-price__text Cумма заказа
           span.f_subtitle.f_mon.total-price__price(data-cart-total)
     .section.section_xxs
-      form.form
+      form.form(name="form-cart")
         formfield
           label.f_xl_2.label(for="cart-name") Имя
-          input.input.input_lg#cart-name(type="text" placeholder="Константин Константинопольский" required)
+          input.input.input_lg#cart-name(type="text" name="name" placeholder="Константин Константинопольский" required)
         formfield
           label.f_xl_2.label(for="cart-phone") Телефон
-          input.input.input_m#cart-phone(type="text" placeholder="+7 999 999-99-99" required)
+          input.input.input_m#cart-phone(type="text" name="phone" placeholder="+7 999 999-99-99" required)
         formfield
           label.f_xl_2.label(for="cart-address") Адрес
           div.input.input_lg.input_container
             span(style="color: #757575") Зеленоград,&nbsp;
-            input.input.input_clear#cart-address(type="text" placeholder="к1206, 127" required)
+            input.input.input_clear#cart-address(type="text" name="address" placeholder="к1206, 127" required)
         .section.section_m
           .form__actions
             +Button-red.form_submit Оформить заказ на сумму:&nbsp;

@@ -2,6 +2,7 @@
   {
     "id": "burger01",
     "name": "Френд'с",
+    "type": "Бургер",
     "descr": "",
     "img": "./assets/img/products/burger01.png",
     "price": 339,
@@ -24,6 +25,7 @@
   {
     "id": "burger02",
     "name": "Big Bro",
+    "type": "Бургер",
     "descr": "",
     "img": "./assets/img/products/burger02.png",
     "price": 329,
@@ -34,6 +36,7 @@
   {
     "id": "burger03",
     "name": "Мексиканский",
+    "type": "Бургер",
     "descr": "",
     "img": "./assets/img/products/burger03.png",
     "price": 299,
@@ -44,6 +47,7 @@
   {
     "id": "burger04",
     "name": "BBQ",
+    "type": "Бургер",
     "descr": "",
     "img": "./assets/img/products/burger04.png",
     "price": 299,
@@ -54,6 +58,7 @@
   {
     "id": "burger05",
     "name": "Машрум",
+    "type": "Бургер",
     "descr": "",
     "img": "./assets/img/products/burger05.png",
     "price": 299,
@@ -64,6 +69,7 @@
   {
     "id": "burger06",
     "name": "Чикен",
+    "type": "Бургер",
     "descr": "",
     "img": "./assets/img/products/burger06.png",
     "price": 299,
@@ -74,6 +80,7 @@
   {
     "id": "burger07",
     "name": "Острый",
+    "type": "Бургер",
     "descr": "",
     "img": "./assets/img/products/burger07.png",
     "price": 299,
@@ -84,6 +91,7 @@
   {
     "id": "burger08",
     "name": "Чизбургер",
+    "type": "Бургер",
     "descr": "",
     "img": "./assets/img/products/burger08.png",
     "price": 299,
@@ -94,6 +102,7 @@
   {
     "id": "burger09",
     "name": "Lamb",
+    "type": "Бургер",
     "descr": "",
     "img": "./assets/img/products/burger09.png",
     "price": 299,
@@ -104,6 +113,7 @@
   {
     "id": "burger10",
     "name": "Хот-Дог",
+    "type": "",
     "descr": "",
     "img": "./assets/img/products/burger10.png",
     "price": 189,
@@ -115,6 +125,7 @@
   {
     "id": "breakfast01",
     "name": "Английский",
+    "type": "Завтрак",
     "descr": "",
     "img": "./assets/img/products/breakfast01.png",
     "price": 399,
@@ -125,6 +136,7 @@
   {
     "id": "breakfast02",
     "name": "Скандинавский",
+    "type": "Завтрак",
     "descr": "",
     "img": "./assets/img/products/breakfast02.png",
     "price": 399,
@@ -135,6 +147,7 @@
   {
     "id": "breakfast03",
     "name": "Американский Big",
+    "type": "Завтрак",
     "descr": "",
     "img": "./assets/img/products/breakfast03.png",
     "price": 399,
@@ -145,6 +158,7 @@
   {
     "id": "breakfast04",
     "name": "Френд'с",
+    "type": "Завтрак",
     "descr": "",
     "img": "./assets/img/products/breakfast04.png",
     "price": 299,
@@ -155,6 +169,7 @@
   {
     "id": "breakfast05",
     "name": "Ранч",
+    "type": "Завтрак",
     "descr": "",
     "img": "./assets/img/products/breakfast05.png",
     "price": 199,
@@ -165,6 +180,7 @@
   {
     "id": "breakfast06",
     "name": "Овсяная каша",
+    "type": "Завтрак",
     "descr": "",
     "img": "./assets/img/products/breakfast06.png",
     "price": 99,
@@ -175,6 +191,7 @@
   {
     "id": "breakfast07",
     "name": "Утренний сэндвич-ролл",
+    "type": "Завтрак",
     "descr": "",
     "img": "./assets/img/products/breakfast07.png",
     "price": 199,

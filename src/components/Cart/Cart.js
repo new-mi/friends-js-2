@@ -636,21 +636,27 @@ class Cart {
     });
   };
 
-  getResultCart = () => {
+  getTextResultCart = () => {
+    if (!this.cart.length) return "Корзина пустая";
     let res = "";
     this.cart.forEach((card) => {
       res += this.getReasultItem(card) + "\n\n";
     });
+    res = res.slice(0, -1);
     return res;
   };
-  getReasultItem = (product) => {
-    return `${product.name}${
+
+  getTextReasultItem = (product) => {
+    if (!product) return;
+    return `${product.type} ${product.name}${
       product.ingredients
         ? "\n" + this.getReasultIngredients(product.ingredients)
         : ""
-    }\n${product.count}\n${product.total}руб`;
+    }\nКолличество: ${product.count}\nСтоимость: ${product.total}руб`;
   };
-  getReasultIngredients = (ingredients) => {
+
+  getTextReasultIngredients = (ingredients) => {
+    if (!ingredients) return;
     return ingredients
       .reduce((acc, item, i) => {
         if (item.inProduct) acc += ` ${item.name},`;
