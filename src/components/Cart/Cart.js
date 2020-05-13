@@ -639,20 +639,26 @@ class Cart {
   getTextResultCart = () => {
     if (!this.cart.length) return "Корзина пустая";
     let res = "";
+    let total = 0;
     this.cart.forEach((card) => {
-      res += this.getTextReasultItem(card) + "\n\n";
+      const resItem = this.getTextReasultItem(card);
+      res += resItem[0] + "\n\n";
+      total += resItem[1];
     });
-    res = res.slice(0, -1);
+    res += `Общая стоимость: ${total} руб`;
     return res;
   };
 
   getTextReasultItem = (product) => {
     if (!product) return;
-    return `${product.type} ${product.name}${
-      product.ingredients
-        ? "\n" + this.getTextReasultIngredients(product.ingredients)
-        : ""
-    }\nКолличество: ${product.count}\nСтоимость: ${product.total}руб`;
+    return [
+      `${product.type} ${product.name}${
+        product.ingredients
+          ? "\n" + this.getTextReasultIngredients(product.ingredients)
+          : ""
+      }\nКолличество: ${product.count}\nСтоимость: ${product.total} руб`,
+      product.total,
+    ];
   };
 
   getTextReasultIngredients = (ingredients) => {
@@ -663,6 +669,11 @@ class Cart {
         return acc;
       }, "Ингредиенты:")
       .slice(0, -1);
+  };
+
+  _clearCart = () => {
+    this.cart = [];
+    this._reRenderWithCart();
   };
 }
 

@@ -27,7 +27,7 @@ $admin_emails = array('vm@websterstd.com');
 //Check required variables.
 $required_vars = array('name', 'phone', 'address');
 //Project name
-$project_name = 'Никольский — заявка';
+$project_name = 'Френдс — заявка';
 
 /**
  * SPECIAL FIELDS NAMES

@@ -19,7 +19,7 @@ class Toast {
       this[name] = (options) => {
         options = Object.assign({}, { type: name }, options);
 
-        this.default(options);
+        return this.default(options);
       };
     });
     // console.log(this);
@@ -144,6 +144,8 @@ class Toast {
     if (!this.isVisible(el)) {
       this.remove(this.container.firstChild, options);
     }
+
+    return [el, options];
   };
 }
 

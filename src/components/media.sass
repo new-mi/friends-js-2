@@ -80,8 +80,10 @@
         overflow: hidden
 
   .gallery
-    &__img
+    [class*="col"]
       margin-bottom: $i*2
+    &__img
+      max-height: 212px
 
   .blockquote
     &__img
@@ -137,6 +139,11 @@
     &__title
       font-size: 1.143rem
 
+  .cart
+    &_art
+      display: none
+  .cart__success
+    width: 100%
 
 @media (max-width: 769px)
   .section
@@ -264,10 +271,10 @@
   .form
     align-items: flex-start
     formfield
-      width: 100%
-      align-items: flex-start
-      flex-direction: column
-      margin-bottom: $i*2
+    width: 100%
+    align-items: flex-start
+    flex-direction: column
+    margin-bottom: $i*2
     .label
       margin-bottom: $i
     .input
@@ -292,6 +299,10 @@
         right: 0
         top: 0
 
+  .gallery
+    &__img
+      max-height: 142px
+
 @media (max-width: 479px)
   .blockquote
     &__info
@@ -300,9 +311,22 @@
       padding: 0 $i
 
   .product-card
-    height: 50vw
+    flex-direction: column
+    // height: 50vw
+    height: auto
+    padding: $i*2
+    &::before
+      content: ''
+      border-radius: $i*2
+      opacity: 0.6
     &__img
-      width: 50%
+      // width: 50%
+      max-width: 100%
+      width: 100%
+      margin: 0
+      border-radius: $i*2 !important
+    &__box
+      width: 100%
 
   .footer
     $self: &

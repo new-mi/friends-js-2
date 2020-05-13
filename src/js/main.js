@@ -6,8 +6,7 @@ function goBack() {
   item.addEventListener("click", goBack);
 });
 
-const formSuccess = document.querySelector("[data-form-success]");
-const form = document.querySelector("[data-form]");
+let loadingToast = null;
 
 // === SEND MAIL
 
@@ -25,27 +24,43 @@ if (formCart) {
 function onSubmitCartHandler(e) {
   e.preventDefault();
   console.log("submit");
+  if (!cart.cart.length) {
+    toast.danger({ content: "Заполните корзину..." });
+    return;
+  }
   sendMailCart(formCart);
+}
+
+function successSendCart() {
+  modalBox.openModal("success");
+  cart._clearCart();
+  formCart.reset();
 }
 
 function sendMailCart(el) {
   var data = new FormData(el),
     url = "/mail_send.php";
 
-  data.append("Корзина", cart.getTextResultCart());
+  data.append("Cart", cart.getTextResultCart());
 
   window.wstd_ga.setData(data, handlerSendForm, url);
   window.wstd_ga.send();
+
+  loadingToast = toast.info({ content: "Отправка...", autoRemove: false });
 
   return false;
 }
 
 function handlerSendForm(d) {
+  toast.remove(loadingToast[0], loadingToast[1]);
+  loadingToast = null;
+
   try {
     const o = JSON.parse(d);
     console.log(o);
 
     if (o.status === "success") {
+      successSendCart();
     } else {
       //error
       console.log(d);

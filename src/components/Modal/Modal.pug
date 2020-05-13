@@ -11,6 +11,18 @@ mixin Modal
       .modal__content
         img(src="./assets/img/menu.jpg" alt="Меню")
 
+    .modal.modal_success(data-modal="success" data-src-modal)
+      .modal__content
+        .cart
+          img.cart_art.cart_art_1(src="./assets/img/art-elements/hotdog.png" alt="")
+          img.cart_art.cart_art_2(src="./assets/img/art-elements/burger.png" alt="")
+          img.cart_art.cart_art_3(src="./assets/img/art-elements/kiwi-v.png" alt="")
+          img.cart_art.cart_art_4(src="./assets/img/art-elements/kiwi-h.png" alt="")
+          .cart__success
+            p.f_title.cart__success-title Спасибо!
+            p.cart__success-text Мы свяжемся с вами в ближайшее время для подтверждения заказа
+            +Button-red-link.cart__success-button(href="index.html") Вернуться на главную
+
     .modal.modal_cart.modal_close-out(data-modal="cart-item" data-src-modal)
       .modal__content
         button.modal__close(type="button" data-modal-close) &times;
@@ -21,7 +33,7 @@ mixin Modal
             .cart__orders(data-cart-modal)
               //- .cart-item
               //-   .cart-item__thumb
-              //-     img(src="./assets/img/products/p-1.png", alt="")
+              //-     img(src="./assets/img/products/p-1.png" alt="")
               //-   .cart-item__box
               //-     .cart-item__row
               //-       .cart-item__info

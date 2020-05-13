@@ -6,8 +6,7 @@ function goBack() {
   item.addEventListener("click", goBack);
 });
 
-const formSuccess = document.querySelector("[data-form-success]");
-const form = document.querySelector("[data-form]");
+let loadingToast = null;
 
 // === SEND MAIL
 
@@ -25,27 +24,43 @@ if (formCart) {
 function onSubmitCartHandler(e) {
   e.preventDefault();
   console.log("submit");
+  if (!cart.cart.length) {
+    toast.danger({ content: "Заполните корзину..." });
+    return;
+  }
   sendMailCart(formCart);
+}
+
+function successSendCart() {
+  modalBox.openModal("success");
+  cart._clearCart();
+  formCart.reset();
 }
 
 function sendMailCart(el) {
   var data = new FormData(el),
     url = "/mail_send.php";
 
-  data.append("Корзина", cart.getTextResultCart());
+  data.append("Cart", cart.getTextResultCart());
 
   window.wstd_ga.setData(data, handlerSendForm, url);
   window.wstd_ga.send();
+
+  loadingToast = toast.info({ content: "Отправка...", autoRemove: false });
 
   return false;
 }
 
 function handlerSendForm(d) {
+  toast.remove(loadingToast[0], loadingToast[1]);
+  loadingToast = null;
+
   try {
     const o = JSON.parse(d);
     console.log(o);
 
     if (o.status === "success") {
+      successSendCart();
     } else {
       //error
       console.log(d);
@@ -704,20 +719,26 @@ class Cart {
   getTextResultCart = () => {
     if (!this.cart.length) return "Корзина пустая";
     let res = "";
+    let total = 0;
     this.cart.forEach((card) => {
-      res += this.getTextReasultItem(card) + "\n\n";
+      const resItem = this.getTextReasultItem(card);
+      res += resItem[0] + "\n\n";
+      total += resItem[1];
     });
-    res = res.slice(0, -1);
+    res += `Общая стоимость: ${total} руб`;
     return res;
   };
 
   getTextReasultItem = (product) => {
     if (!product) return;
-    return `${product.type} ${product.name}${
-      product.ingredients
-        ? "\n" + this.getTextReasultIngredients(product.ingredients)
-        : ""
-    }\nКолличество: ${product.count}\nСтоимость: ${product.total}руб`;
+    return [
+      `${product.type} ${product.name}${
+        product.ingredients
+          ? "\n" + this.getTextReasultIngredients(product.ingredients)
+          : ""
+      }\nКолличество: ${product.count}\nСтоимость: ${product.total} руб`,
+      product.total,
+    ];
   };
 
   getTextReasultIngredients = (ingredients) => {
@@ -728,6 +749,11 @@ class Cart {
         return acc;
       }, "Ингредиенты:")
       .slice(0, -1);
+  };
+
+  _clearCart = () => {
+    this.cart = [];
+    this._reRenderWithCart();
   };
 }
 
@@ -1014,6 +1040,22 @@ if (SHBlocks.length > 0) {
   })
 }
 
+var mySwiper = new Swiper ('.stocks-slider.swiper-container', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  navigation: {
+    nextEl: '.stocks-slider__navs .stocks-slider__nav_next',
+    prevEl: '.stocks-slider__navs .stocks-slider__nav_prev',
+  },
+  touchRatio: 0
+})
+
 class Switcher {
   constructor(domSwitcher) {
     this.opts = {
@@ -1071,22 +1113,6 @@ if (switchProducts.length > 0) {
   })
 }
 
-var mySwiper = new Swiper ('.stocks-slider.swiper-container', {
-  loop: true,
-  autoplay: {
-    delay: 5000,
-  },
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
-  navigation: {
-    nextEl: '.stocks-slider__navs .stocks-slider__nav_next',
-    prevEl: '.stocks-slider__navs .stocks-slider__nav_prev',
-  },
-  touchRatio: 0
-})
-
 class Toast {
   constructor(selectorContainer) {
     this.opts = {
@@ -1108,7 +1134,7 @@ class Toast {
       this[name] = (options) => {
         options = Object.assign({}, { type: name }, options);
 
-        this.default(options);
+        return this.default(options);
       };
     });
     // console.log(this);
@@ -1233,6 +1259,8 @@ class Toast {
     if (!this.isVisible(el)) {
       this.remove(this.container.firstChild, options);
     }
+
+    return [el, options];
   };
 }
 
