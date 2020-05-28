@@ -446,7 +446,8 @@ class Cart {
 
     product.ingredients.forEach((item) => {
       const label = document.createElement("label");
-      label.className = "ingredients__item";
+      label.className =
+        "ingredients__item" + (item.disabled ? " disabled" : "");
 
       const input = document.createElement("input");
       input.type = "checkbox";
@@ -455,6 +456,7 @@ class Cart {
         this._reRender(product.el, product);
       });
       input.checked = item.inProduct ? true : false;
+      input.disabled = item.disabled ? true : false;
 
       const span = document.createElement("span");
 

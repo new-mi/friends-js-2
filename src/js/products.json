@@ -3,118 +3,363 @@
     "id": "burger01",
     "name": "Френд'с",
     "type": "Бургер",
-    "descr": "Говяжья котлета с соусом Айоли",
+    "descr": "Говяжья котлета с соусом айоли, с сыром пармезан, беконом, запеченным перцом и карамелизированным луком",
     "img": "./assets/img/products/burger01.png",
     "price": 339,
     "count": 1,
     "cartType": "semicircle",
-    "isNew": false
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Говяжья котлета",
+        "inProduct": true,
+        "price": 0,
+        "disabled": true
+      },
+      {
+        "name": "Соус Айоли",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Сыр пармезан",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Бекон",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Запеченный перец",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Карамелизированный лук",
+        "inProduct": true,
+        "price": 0
+      }
+    ]
   },
   {
     "id": "burger02",
     "name": "Big Bro",
     "type": "Бургер",
-    "descr": "Говяжья котлета с соусом Гриль",
+    "descr": "Говяжья котлета с соусом гриль, с сыром чеддер, помидорками, листом салата айсберг и красным луком",
     "img": "./assets/img/products/burger02.png",
     "price": 329,
     "count": 1,
     "cartType": "semicircle",
-    "isNew": false
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Говяжья котлета",
+        "inProduct": true,
+        "price": 0,
+        "disabled": true
+      },
+      {
+        "name": "Соус Гриль",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Сыр Чеддер",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Помидоры",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Салат Айсберг",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Красный лук",
+        "inProduct": true,
+        "price": 0
+      }
+    ]
   },
   {
     "id": "burger03",
     "name": "Мексиканский",
     "type": "Бургер",
-    "descr": "Говяжья котлета с острым соусом Чипот-",
+    "descr": "Говяжья котлета с острым соусом чипотле, с соусом ранч и луком",
     "img": "./assets/img/products/burger03.png",
     "price": 299,
     "count": 1,
     "cartType": "semicircle",
-    "isNew": false
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Говяжья котлета",
+        "inProduct": true,
+        "price": 0,
+        "disabled": true
+      },
+      {
+        "name": "Острый соус Чипотле",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Соус Ранч",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Лук",
+        "inProduct": true,
+        "price": 0
+      }
+    ]
   },
   {
     "id": "burger04",
     "name": "BBQ",
     "type": "Бургер",
-    "descr": "Говяжья котлета с соусом Барбекю, беконом и золотистым луком",
+    "descr": "говяжья котлета с соусом барбекю, беконом и золотистым луком фри",
     "img": "./assets/img/products/burger04.png",
     "price": 299,
     "count": 1,
     "cartType": "semicircle",
-    "isNew": false
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Говяжья котлета",
+        "inProduct": true,
+        "price": 0,
+        "disabled": true
+      },
+      {
+        "name": "Соус Барбекю",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Бекон",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Золотичтый лук фри",
+        "inProduct": true,
+        "price": 0
+      }
+    ]
   },
   {
     "id": "burger05",
     "name": "Машрум",
     "type": "Бургер",
-    "descr": "Говяжья котлета с жареными грибами",
+    "descr": "Говяжья котлета с жареными грибами, с сыром моцарелла и луковыми кольцами",
     "img": "./assets/img/products/burger05.png",
     "price": 299,
     "count": 1,
     "cartType": "semicircle",
-    "isNew": false
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Говяжья котлета",
+        "inProduct": true,
+        "price": 0,
+        "disabled": true
+      },
+      {
+        "name": "Жареные грибы",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Сыр Моцарелла",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Луковые кольца",
+        "inProduct": true,
+        "price": 0
+      }
+    ]
   },
   {
     "id": "burger06",
     "name": "Чикен",
     "type": "Бургер",
-    "descr": "Классический бургер с нежной котлетой",
+    "descr": "Классический бургер с нежной котлетой из куриной грудки",
     "img": "./assets/img/products/burger06.png",
     "price": 299,
     "count": 1,
     "cartType": "semicircle",
-    "isNew": false
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Котлета из куриной грудки",
+        "inProduct": true,
+        "price": 0,
+        "disabled": true
+      }
+    ]
   },
   {
     "id": "burger07",
     "name": "Острый",
     "type": "Бургер",
-    "descr": "Говяжья котлета с соусом Гриль",
+    "descr": "Говяжья котлета с соусом гриль, сыром моцарелла, болгарским перцем и перцем холапеньо",
     "img": "./assets/img/products/burger07.png",
     "price": 299,
     "count": 1,
     "cartType": "semicircle",
-    "isNew": false
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Говяжья котлета",
+        "inProduct": true,
+        "price": 0,
+        "disabled": true
+      },
+      {
+        "name": "Соус Гриль",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Сыр Моцарелла",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Болгарский перец",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Перец холапеньо",
+        "inProduct": true,
+        "price": 0
+      }
+    ]
   },
   {
     "id": "burger08",
     "name": "Чизбургер",
     "type": "Бургер",
-    "descr": "Классический бургер с сыром Чеддер",
+    "descr": "Классический бургер с сыром чеддер.",
     "img": "./assets/img/products/burger08.png",
     "price": 299,
     "count": 1,
     "cartType": "semicircle",
-    "isNew": false
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Говяжья котлета",
+        "inProduct": true,
+        "price": 0,
+        "disabled": true
+      },
+      {
+        "name": "Сыр Чеддер",
+        "inProduct": true,
+        "price": 0
+      }
+    ]
   },
   {
     "id": "burger09",
     "name": "Lamb",
     "type": "Бургер",
-    "descr": "Котлета из нежного ягнёнка, соус Сальса, кинза",
+    "descr": "Котлета из нежного ягненка, соус сальса, кинза, сыр моцарелла и свежие огурчики",
     "img": "./assets/img/products/burger09.png",
     "price": 299,
     "count": 1,
     "cartType": "semicircle",
-    "isNew": false
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Котлета из нежного ягненка",
+        "inProduct": true,
+        "price": 0,
+        "disabled": true
+      },
+      {
+        "name": "Соус Сальса",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Кинза",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Сыр Моцарелла",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Свежие огурцы",
+        "inProduct": true,
+        "price": 0
+      }
+    ]
   },
   {
     "id": "burger10",
-    "name": "Хот-Дог",
+    "name": "Черри",
     "type": "",
-    "descr": "Классический хот-дог, который по желанию",
-    "img": "./assets/img/products/burger10.png",
-    "price": 189,
+    "descr": "Говяжья котлета с вишней, томленной в сахаре с прованскими травами, домашним сырным соусом, беконом и сыром чеддер.",
+    "img": "./assets/img/products/burger01.png",
+    "price": 319,
     "count": 1,
-    "cartType": "ellipse",
-    "isNew": false
+    "cartType": "semicircle",
+    "isNew": false,
+    "ingredients": [
+      {
+        "name": "Говяжья котлета",
+        "inProduct": true,
+        "price": 0,
+        "disabled": true
+      },
+      {
+        "name": "Вишня",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Прованские травы",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Домашний сырный соус",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Бекон",
+        "inProduct": true,
+        "price": 0
+      },
+      {
+        "name": "Сыр Чеддер",
+        "inProduct": true,
+        "price": 0
+      }
+    ]
   },
 
   {
     "id": "breakfast01",
     "name": "Английский",
     "type": "Завтрак",
-    "descr": "Глазунья из двух яиц, свиная колбаска, бекон, белая фасоль, жареные грибы, черный пудинг, помидор, хашбрауны, а так же тосты с маслом и джемом",
+    "descr": "Глазунья из двух яиц, свиная колбаска, бекон, белая фасоль, жареные грибы, помидор, хашбрауны, а так же тосты с маслом и джемом",
     "img": "./assets/img/products/breakfast01.png",
     "price": 399,
     "count": 1,
@@ -136,7 +381,7 @@
     "id": "breakfast03",
     "name": "Американский Big",
     "type": "Завтрак",
-    "descr": "Нежный омлет с сыром на хрустящей чиаббате, бекон, хашбрауны и свежие овощи + апельсиновый фреш",
+    "descr": "Нежный омлет с сыром на хрустящей чиабатте, бекон, хашбрауны и свежие овощи + апельсиновый фреш",
     "img": "./assets/img/products/breakfast03.png",
     "price": 399,
     "count": 1,
@@ -147,7 +392,7 @@
     "id": "breakfast04",
     "name": "Френд'с",
     "type": "Завтрак",
-    "descr": "Омлет из двух яиц с помидорами и лукомб сосиски, хашбраун, тосты и блинчики + чай/американский кофе",
+    "descr": "Омлет из двух яиц с помидорами и луком, сосиски, хашбраун, тосты и блинчики + чай/американский кофе",
     "img": "./assets/img/products/breakfast04.png",
     "price": 299,
     "count": 1,
@@ -158,7 +403,7 @@
     "id": "breakfast05",
     "name": "Ранч",
     "type": "Завтрак",
-    "descr": "Глазунья из трёх яиц с ржаными гренками, картофелем по-деревенски и беконом + чай/американский кофе",
+    "descr": "Глазунья из трёх яиц с ржаными гренками, картофелем по деревенски и беконом + чай/американский кофе",
     "img": "./assets/img/products/breakfast05.png",
     "price": 199,
     "count": 1,
@@ -227,8 +472,19 @@
     "id": "breakfast07",
     "name": "Утренний сэндвич-ролл",
     "type": "Завтрак",
-    "descr": "Сэндвич-ролл с сосиской, нежным омлетом, сыром Чеддер, солеными огурчиками и луком фри",
+    "descr": "Сэндвич-ролл с сосиской, нежным омлетом, сыром чеддер, солеными огурчиками и луком фри",
     "img": "./assets/img/products/breakfast07.png",
+    "price": 199,
+    "count": 1,
+    "cartType": "empty",
+    "isNew": false
+  },
+  {
+    "id": "breakfast08",
+    "name": "Сырники",
+    "type": "Завтрак",
+    "descr": "Нежные пышные сырники со сметаной и домашним клубничным соусом",
+    "img": "./assets/img/products/breakfast08.png",
     "price": 199,
     "count": 1,
     "cartType": "empty",

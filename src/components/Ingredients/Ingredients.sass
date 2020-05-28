@@ -53,6 +53,9 @@
         border-left: 2px solid $white
         transform: rotate(-45deg)
         opacity: 0
+    &.disabled
+      opacity: 0.6
+      pointer-events: none
   input
     position: absolute
     top: -1px
@@ -65,10 +68,8 @@
       & + span
         border-color: $orange-light
     &:checked
-       & + span
+      & + span
         background-color: $orange-light
         border-color: $orange-light
         &::before
           opacity: 1
-
-
