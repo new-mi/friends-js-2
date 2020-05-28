@@ -71,6 +71,13 @@ function handlerSendForm(d) {
 }
 // SEND MAIL ===
 
+new Swiper ('.blockquote__slider.swiper-container', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+})
+
 class Cart {
   static url = "./assets/js/products.json";
   static limit = 3600 * 1000; // 1 час
@@ -1260,10 +1267,3 @@ class Toast {
 }
 
 const toast = new Toast("#toast");
-
-new Swiper ('.blockquote__slider.swiper-container', {
-  loop: true,
-  autoplay: {
-    delay: 5000,
-  },
-})
