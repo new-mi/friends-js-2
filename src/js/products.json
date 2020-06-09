@@ -489,5 +489,17 @@
     "count": 1,
     "cartType": "empty",
     "isNew": false
+  },
+
+  {
+    "id": "breakfast08",
+    "name": "Сырники",
+    "type": "Завтрак",
+    "descr": "Нежные пышные сырники со сметаной и домашним клубничным соусом",
+    "img": "./assets/img/products/breakfast08.png",
+    "price": 199,
+    "count": 1,
+    "cartType": "empty",
+    "isNew": false
   }
 ]

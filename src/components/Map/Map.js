@@ -1,10 +1,10 @@
-const map = document.querySelector('#map');
-const coordsMap = [55.996116, 37.211498]
+const map = document.querySelector("#map");
+const coordsMap = [55.996116, 37.211498];
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-map && ymaps.ready(initMap);
+window.ymaps && map && ymaps.ready(initMap);
 
-function initMap(){
+function initMap() {
   // Создание карты.
   var myMap = new ymaps.Map("map", {
     // Координаты центра карты.
@@ -15,15 +15,15 @@ function initMap(){
     // Уровень масштабирования. Допустимые значения:
     // от 0 (весь мир) до 19.
     zoom: 15,
-    controls: []
-    });
+    controls: [],
+  });
 
-    var myPlacemark = new ymaps.GeoObject({
-      geometry: {
+  var myPlacemark = new ymaps.GeoObject({
+    geometry: {
       type: "Point",
-      coordinates: coordsMap
-    }
-    });
-    // Размещение геообъекта на карте.
-    myMap.geoObjects.add(myPlacemark);
+      coordinates: coordsMap,
+    },
+  });
+  // Размещение геообъекта на карте.
+  myMap.geoObjects.add(myPlacemark);
 }
