@@ -22,8 +22,9 @@ block content
           a.f_title.switch-products__tab(href="#") Бургеры
             img.icon.last(src="./assets/img/i-smile.png")
           a.f_title.switch-products__tab(href="#") Завтраки
+          a.f_title.switch-products__tab(href="#") Прочее
         .switch-products__content(data-switcher-content)
-          .switch-products__item
+          .switch-products__item.switch-products__item-mobile
             .row
               .col-6.col-md-12
                 span(data-products-item="burger01")
@@ -58,7 +59,7 @@ block content
               //-       .product-card__descr Говяжья котлета с соусом «Айоли»
               //-       .product-card__actions
               //-         +Button-product-card.product-card__button В корзину
-          .switch-products__item
+          .switch-products__item.switch-products__item-mobile
             .row
               .col-6.col-md-12
                 span(data-products-item="breakfast01")
@@ -70,12 +71,130 @@ block content
                 span(data-products-item="breakfast04")
               .col-6.col-md-12
                 span(data-products-item="breakfast05")
-              .col-6.col-md-12
+              //-.col-6.col-md-12
                 span(data-products-item="breakfast06")
               .col-6.col-md-12
                 span(data-products-item="breakfast07")
               .col-6.col-md-12
                 span(data-products-item="breakfast08")
+
+          .switch-products__item
+            .row
+              .col-12
+                h2.f_title.switch-products__subtitle Блинчики
+            .switch-products__item-mobile
+              .row
+                .col-6.col-md-12
+                  span(data-products-item="pancake01")
+                .col-6.col-md-12
+                  span(data-products-item="pancake02")
+                .col-6.col-md-12
+                  span(data-products-item="pancake03")
+                .col-6.col-md-12
+                  span(data-products-item="pancake04")
+            .row
+              .col-12
+                h2.f_title.switch-products__subtitle Горячее
+            .switch-products__item-mobile
+              .row
+                .col-6.col-md-12
+                  span(data-products-item="hot01")
+                .col-6.col-md-12
+                  span(data-products-item="hot02")
+                .col-6.col-md-12
+                  span(data-products-item="hot03")
+
+            .row
+              .col-12
+                h2.f_title.switch-products__subtitle Закуски
+            .switch-products__item-mobile
+              .row
+                .col-6.col-md-12
+                  span(data-products-item="snack01")
+                .col-6.col-md-12
+                  span(data-products-item="snack02")
+                .col-6.col-md-12
+                  span(data-products-item="snack03")
+                .col-6.col-md-12
+                  span(data-products-item="snack04")
+
+            .row
+              .col-12
+                h2.f_title.switch-products__subtitle Картофель
+            .switch-products__item-mobile
+              .row
+                .col-6.col-md-12
+                  span(data-products-item="potatoes01")
+                .col-6.col-md-12
+                  span(data-products-item="potatoes02")
+                .col-6.col-md-12
+                  span(data-products-item="potatoes03")
+                .col-6.col-md-12
+                  span(data-products-item="potatoes04")
+                .col-6.col-md-12
+                  span(data-products-item="potatoes05")
+
+            .row
+              .col-12
+                h2.f_title.switch-products__subtitle Соусы
+            .switch-products__item-mobile.switch-products__item-mobile_sauce
+              .row
+                .col-3.col-md-6
+                  span(data-products-item="sauce01")
+                .col-3.col-md-6
+                  span(data-products-item="sauce02")
+                .col-3.col-md-6
+                  span(data-products-item="sauce03")
+                .col-3.col-md-6
+                  span(data-products-item="sauce04")
+                .col-3.col-md-6
+                  span(data-products-item="sauce05")
+                .col-3.col-md-6
+                  span(data-products-item="sauce06")
+                .col-3.col-md-6
+                  span(data-products-item="sauce07")
+                .col-3.col-md-6
+                  span(data-products-item="sauce08")
+                .col-3.col-md-6
+                  span(data-products-item="sauce09")
+                .col-3.col-md-6
+                  span(data-products-item="sauce10")
+                .col-3.col-md-6
+                  span(data-products-item="sauce11")
+                .col-3.col-md-6
+                  span(data-products-item="sauce12")
+
+            .row
+              .col-12
+                h2.f_title.switch-products__subtitle Напитки
+            .switch-products__item-mobile.switch-products__item-mobile_drink
+              .row
+                .col-6.col-md-12
+                  span(data-products-item="drink01")
+                .col-6.col-md-12
+                  span(data-products-item="drink02")
+                .col-6.col-md-12
+                  span(data-products-item="drink03")
+                .col-6.col-md-12
+                  span(data-products-item="drink04")
+                .col-6.col-md-12
+                  span(data-products-item="drink05")
+                .col-6.col-md-12
+                  span(data-products-item="drink06")
+                .col-6.col-md-12
+                  span(data-products-item="drink07")
+                .col-6.col-md-12
+                  span(data-products-item="drink08")
+                .col-6.col-md-12
+                  span(data-products-item="drink09")
+                .col-6.col-md-12
+                  span(data-products-item="drink10")
+                .col-6.col-md-12
+                  span(data-products-item="drink11")
+                .col-6.col-md-12
+                  span(data-products-item="drink12")
+
+
   section.section.section_lg
     .promo-slider
       .container

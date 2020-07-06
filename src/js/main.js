@@ -24,6 +24,12 @@ if (formCart) {
 function onSubmitCartHandler(e) {
   e.preventDefault();
   console.log("submit");
+  const total = cart._getTotal();
+  if (typeof total !== "number") return;
+  if (total < 1000) {
+    toast.warning({ content: "Минимальная сумма заказа — 1000 руб" });
+    return;
+  }
   if (!cart.cart.length) {
     toast.danger({ content: "Заполните корзину..." });
     return;

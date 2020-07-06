@@ -13,6 +13,8 @@
 
   .product-card
     height: 22vw
+    &_no-img
+      height: auto
     &__title
       font-size: 1.33rem
     &__price
@@ -99,6 +101,8 @@
 
   .product-card
     height: 26vw
+    &_no-img
+      height: auto
 
   .footer
     &__inner
@@ -240,9 +244,24 @@
       width: $i*5
 
   .product-card
-    height: 44vw
+    flex-direction: column
+    // height: 50vw
+    // height: auto
+    padding: $i*2
+    &::before
+      content: ''
+      border-radius: $i*2
+      opacity: 0.6
     &__img
-      width: 40%
+      // width: 50%
+      max-width: 100%
+      width: 100%
+      margin: 0
+      border-radius: $i*2 !important
+    &__vapor
+      display: none
+    &__box
+      width: 100%
 
   .chat-block
     &__thumb
@@ -309,6 +328,40 @@
     &__img
       max-height: 142px
 
+  .switch-products
+    &__subtitle
+      margin: 16px 0
+    &__item
+      &-mobile
+        .row
+          flex-wrap: nowrap
+          overflow-x: scroll
+          margin-left: -16px
+          margin-right: -16px
+          padding: 0 8px 10px
+          & > *
+            width: 80%
+            flex-basis: 80%
+        &_sauce
+          .row > *
+            width: 40%
+            flex-basis: 40%
+
+        &_drink
+          .row > *
+            width: 60%
+            flex-basis: 60%
+
+  .product-card
+    height: 100%
+    margin-bottom: 0
+    &__box
+      height: 100%
+      display: flex
+      flex-direction: column
+    &__actions
+      margin-top: auto
+
 @media (max-width: 479px)
   .blockquote
     &__info
@@ -316,23 +369,25 @@
     &__item
       padding: 0 $i
 
-  .product-card
-    flex-direction: column
-    // height: 50vw
-    height: auto
-    padding: $i*2
-    &::before
-      content: ''
-      border-radius: $i*2
-      opacity: 0.6
-    &__img
-      // width: 50%
-      max-width: 100%
-      width: 100%
-      margin: 0
-      border-radius: $i*2 !important
-    &__box
-      width: 100%
+  // .product-card
+  //   flex-direction: column
+  //   // height: 50vw
+  //   // height: auto
+  //   padding: $i*2
+  //   &::before
+  //     content: ''
+  //     border-radius: $i*2
+  //     opacity: 0.6
+  //   &__img
+  //     // width: 50%
+  //     max-width: 100%
+  //     width: 100%
+  //     margin: 0
+  //     border-radius: $i*2 !important
+  //   &__vapor
+  //     display: none
+  //   &__box
+  //     width: 100%
 
   .footer
     $self: &
@@ -400,7 +455,7 @@
       // text-align: left
 
   .cart-item-dop
-    max-width: none
+    max-width: 277px
     width: auto
 
   .total-price

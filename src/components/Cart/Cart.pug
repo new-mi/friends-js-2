@@ -46,13 +46,11 @@ mixin Cart
           .swiper-slide
             span(data-products-item-dop="burger01")
           .swiper-slide
-            span(data-products-item-dop="burger02")
+            span(data-products-item-dop="hot03")
           .swiper-slide
-            span(data-products-item-dop="burger03")
+            span(data-products-item-dop="drink01")
           .swiper-slide
-            span(data-products-item-dop="p01")
-          .swiper-slide
-            span(data-products-item-dop="p02")
+            span(data-products-item-dop="sauce01")
           //- .swiper-slide.cart-item-dop
           //-   .cart-item-dop__row
           //-     .cart-item-dop__thumb
@@ -87,6 +85,6 @@ mixin Cart
             input.input.input_clear#cart-address(type="text" name="address" placeholder="к1206, 127" required)
         .section.section_m
           .form__actions
-            +Button-red.form_submit Оформить заказ на сумму:&nbsp;
+            +Button-red.form_submit(type="submit" data-cart-submit) Оформить заказ на сумму:&nbsp;
               span(data-cart-total)
             p.f_sm.f_medium.f_mon.form__politic Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки данных</a>

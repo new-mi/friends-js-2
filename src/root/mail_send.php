@@ -283,7 +283,7 @@ class MailSend{
                 $mail->CharSet = 'UTF-8';
 
 
-                $mail->setFrom('noreply@nikolsky.rest', 'Никольский');
+                $mail->setFrom('noreply@friends.ru', 'Френдс');
                 foreach($this->emails as $address){
                     $mail->addAddress($address);
                 }

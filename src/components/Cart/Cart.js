@@ -17,7 +17,7 @@ class Cart {
   }
 
   _init = () => {
-    console.log(this);
+    // console.log(this);
     // this._renderMainList();
     this._renderItemsCard("data-products-item", this._renderProductCart);
     this._renderDopSlider();
@@ -29,6 +29,7 @@ class Cart {
     this._renderCount();
     this._renderCart();
     this._renderTotal();
+    this._checkBtnSubmit();
   };
 
   //запрос продукции
@@ -78,11 +79,25 @@ class Cart {
     localStorage.removeItem("cart");
   };
 
+  //check btn submit
+  _checkBtnSubmit = () => {
+    let btns = document.querySelectorAll("button[data-cart-submit]");
+    const total = this._getTotal();
+    btns.forEach((btn) => {
+      if (total < 1000) {
+        btn.classList.add("disabled");
+      } else {
+        btn.classList.remove("disabled");
+      }
+    });
+  };
+
   //обновление без списка в корзине
   _reRenderWithoutCart = () => {
     this._setLocalStorage();
     this._renderCount();
     this._renderTotal();
+    this._checkBtnSubmit();
   };
 
   //обновление вместе со списком в корзине
@@ -91,13 +106,19 @@ class Cart {
     this._renderCount();
     this._renderCart();
     this._renderTotal();
+    this._checkBtnSubmit();
+  };
+
+  _getTotal = () => {
+    const total = this.cart.reduce((acc, item) => {
+      return (acc += item.total);
+    }, 0);
+    return total;
   };
 
   //просчет и рендер общей суммы товаров
   _renderTotal = () => {
-    const total = this.cart.reduce((acc, item) => {
-      return (acc += item.total);
-    }, 0);
+    const total = this._getTotal();
     [].forEach.call(this.totalElement, (el) => {
       el.innerText = `${total} руб`;
     });
@@ -249,6 +270,7 @@ class Cart {
       ellipse: "product-card_ellipse",
       semicircle: "product-card_semicircle",
       empty: "product-card_empty",
+      "no-img": "product-card_no-img",
     };
     const product = this.products.find((p) => p.id === id);
     if (!product) return null;
@@ -323,7 +345,7 @@ class Cart {
     box.append(descr);
     box.append(actions);
 
-    card.append(imgWrap);
+    if (product.img !== false) card.append(imgWrap);
     card.append(box);
 
     return card;
@@ -414,7 +436,7 @@ class Cart {
     box.append(row);
     box.append(row2);
 
-    card.append(thumb);
+    if (product.img !== false) card.append(thumb);
     card.append(box);
 
     product.el = card;
@@ -450,11 +472,25 @@ class Cart {
         "ingredients__item" + (item.disabled ? " disabled" : "");
 
       const input = document.createElement("input");
-      input.type = "checkbox";
-      input.addEventListener("change", () => {
-        item.inProduct = !item.inProduct;
-        this._reRender(product.el, product);
-      });
+      if (item.radio) {
+        input.type = "checkbox";
+        input.name = item.radio;
+        input.addEventListener("change", () => {
+          product.ingredients.forEach((ing) => {
+            if (ing.radio === item.radio && ing !== item) {
+              ing.inProduct = false;
+            }
+            item.inProduct = true;
+          });
+          this._reRender(product.el, product);
+        });
+      } else {
+        input.type = "checkbox";
+        input.addEventListener("change", () => {
+          item.inProduct = !item.inProduct;
+          this._reRender(product.el, product);
+        });
+      }
       input.checked = item.inProduct ? true : false;
       input.disabled = item.disabled ? true : false;
 
@@ -562,7 +598,7 @@ class Cart {
     info.append(title);
     info.append(price);
 
-    row.append(thumb);
+    if (product.img) row.append(thumb);
     row.append(info);
 
     row2.append(button);
@@ -647,18 +683,20 @@ class Cart {
       res += resItem[0] + "\n\n";
       total += resItem[1];
     });
-    res += `Общая стоимость: ${total} руб`;
+    res += `<b>Общая стоимость:</b> ${total} руб`;
     return res;
   };
 
   getTextReasultItem = (product) => {
     if (!product) return;
     return [
-      `${product.type} ${product.name}${
+      `<b>${product.type}:</b> ${product.name}${
         product.ingredients
           ? "\n" + this.getTextReasultIngredients(product.ingredients)
           : ""
-      }\nКолличество: ${product.count}\nСтоимость: ${product.total} руб`,
+      }\n<br/><b>Колличество:</b> ${product.count}\n<br/><b>Стоимость:</b> ${
+        product.total
+      } руб<br/><br/>`,
       product.total,
     ];
   };
@@ -669,7 +707,7 @@ class Cart {
       .reduce((acc, item, i) => {
         if (item.inProduct) acc += ` ${item.name},`;
         return acc;
-      }, "Ингредиенты:")
+      }, "<br/><b>Ингредиенты:</b>")
       .slice(0, -1);
   };
 
