@@ -738,6 +738,8 @@ class Cart {
     this._equalInCart(this.modalElement, (status, res) => {
       // console.log(status, res);
       if (status === 1 || (status === 2 && !res.length)) {
+        const mEl = this.modalElement
+        mEl.el = null
         this.cart.push(JSON.parse(JSON.stringify(this.modalElement)));
         modalBox.closeModalAll();
         this._reRenderWithCart();
@@ -767,35 +769,59 @@ class Cart {
     let total = 0;
     this.cart.forEach((card) => {
       const resItem = this.getTextReasultItem(card);
-      res += resItem[0] + "\n\n";
+      res += resItem[0];
       total += resItem[1];
     });
-    res += `<b>Общая стоимость:</b> ${total} руб`;
+    res += `Общая стоимость: <b>${total} руб</b>`;
+    //const el = document.createElement('div')
+    //el.innerHTML = res
+    //document.body.appendChild(el);
     return res;
   };
 
   getTextReasultItem = (product) => {
     if (!product) return;
     return [
-      `<b>${product.type}:</b> ${product.name}${
+      `${product.type}: <b>${product.name}</b>${
         product.ingredients
           ? "\n" + this.getTextReasultIngredients(product.ingredients)
           : ""
-      }\n<br/><b>Колличество:</b> ${product.count}\n<br/><b>Стоимость:</b> ${
+      }\n<br/>Колличество: <b>${product.count}</b><br/>Стоимость: <b>${
         product.total
-      } руб<br/><br/>`,
+      } руб</b><br/><br/>`,
       product.total,
     ];
   };
 
   getTextReasultIngredients = (ingredients) => {
     if (!ingredients) return;
-    return ingredients
-      .reduce((acc, item, i) => {
-        if (item.inProduct) acc += ` ${item.name},`;
-        return acc;
-      }, "<br/><b>Ингредиенты:</b>")
-      .slice(0, -1);
+    const minus = [], plus = [];
+    let minusEl = '', plusEl = '';
+
+    ingredients.forEach(item => {
+      if (!item.inProduct && item.default) {
+        minus.push(item.name)
+      }
+      if (item.inProduct && !item.default) {
+        plus.push(item.name)
+      }
+    })
+    if (minus.length > 0) {
+      minusEl = minus
+        .reduce((acc, item, i) => {
+          return acc += ` <b>${item}</b>,`;
+        }, "<br/>Убраны:")
+        .slice(0, -1);
+    }
+    if (plus.length > 0) {
+      plusEl = plus
+        .reduce((acc, item, i) => {
+          return acc += ` <b>${item}</b>,`;
+        }, "<br/>Добавлены:")
+        .slice(0, -1);
+    }
+
+    return  minusEl + plusEl
   };
 
   _clearCart = () => {
@@ -1024,6 +1050,13 @@ const modalImg = document.querySelector("[data-src-modal]");
   });
 });
 
+var mySwiper = new Swiper ('.promo-slider__slider.swiper-container', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+})
+
 class SHBlock {
   constructor(domElement) {
     this.opts = {
@@ -1079,13 +1112,6 @@ if (SHBlocks.length > 0) {
     new SHBlock(block)
   })
 }
-
-var mySwiper = new Swiper ('.promo-slider__slider.swiper-container', {
-  loop: true,
-  autoplay: {
-    delay: 5000,
-  },
-})
 
 var mySwiper = new Swiper(".stocks-slider.swiper-container", {
   loop: false,

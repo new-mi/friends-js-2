@@ -12,36 +12,43 @@
     "ingredients": [
       {
         "name": "Говяжья котлета",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Запеченый болгарский перец",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Карамелизированный красный лук",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Сыр пармезан",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Бекон",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Салат айсберг",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Соус айоле",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -60,31 +67,37 @@
     "ingredients": [
       {
         "name": "Говяжья котлета",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Соус гриль",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Сыр чеддер",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Помидоры",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Салат айсберг",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Красный лук",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -103,36 +116,43 @@
     "ingredients": [
       {
         "name": "Говяжья котлета",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Острый соус чипотле",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Соус Ранч",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Лук репчатый",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Cыр чеддер",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Помидор",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Cалат айсберг",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -151,47 +171,55 @@
     "ingredients": [
       {
         "name": "Говяжья котлета",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       },
       {
         "name": "Соус барбекю",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Соус ранч",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Бекон",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Золотичтый лук фри",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Лук репчатый",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Огурцы маринованные",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Cыр чеддер",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Салат айсберг",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -210,37 +238,43 @@
     "ingredients": [
       {
         "name": "Говяжья котлета",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       },
       {
         "name": "Грибы шампиньоны жареные",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Сыр гауда",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Луковые кольца в панировке",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Помидор",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Cалат айсберг",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Соус айоли",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -259,33 +293,33 @@
     "ingredients": [
       {
         "name": "Котлета из куриной грудки",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       },
       {
         "name": "Помидор",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       },
       {
         "name": "Лук фри",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       },
       {
         "name": "Салат айсберг",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       },
       {
         "name": "Соус ранч",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       }
     ]
   },
@@ -302,32 +336,37 @@
     "ingredients": [
       {
         "name": "Говяжья котлета",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       },
       {
         "name": "Соус гриль",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Сыр гауда",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Перец болгарский красный сладкий",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Перец халапеньо консервированый",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Салат айсберг",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -346,32 +385,37 @@
     "ingredients": [
       {
         "name": "Говяжья котлета",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       },
       {
         "name": "Сыр чеддер",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Огурцы маринованные",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Лук репчатый",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Соус горчичный",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Кетчуп томатный",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -390,27 +434,31 @@
     "ingredients": [
       {
         "name": "Котлета из нежного ягненка",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       },
       {
         "name": "Соус сальса",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Кинза",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Сыр гауда",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Свежие огурцы",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -419,7 +467,7 @@
   {
     "id": "burger10",
     "name": "Черри",
-    "type": "",
+    "type": "Бургер",
     "descr": "Говяжья котлета с вишней, томленной в сахаре с прованскими травами, домашним сырным соусом, беконом и сыром чеддер.",
     "img": "./assets/img/products/burger01.png",
     "price": 319,
@@ -429,38 +477,42 @@
     "ingredients": [
       {
         "name": "Говяжья котлета",
+        "default": true,
         "inProduct": true,
-        "price": 0,
-        "disabled": true
+        "price": 0
       },
       {
         "name": "Вишневый соус",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Прованские травы",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Сырный соус",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Жареный бекон",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Сыр чеддер",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
     ]
   },
-
   {
     "id": "breakfast01",
     "name": "Английский",
@@ -474,41 +526,49 @@
     "ingredients": [
       {
         "name": "Глазунья из 2х яиц",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Сосиска свиная",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Хаш брауны",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Грибы шампиньоны жареные",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Помидор гриль",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Жареный бекон",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Фасоль в томатном соусе",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Тосты с джемом и маслом",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -527,36 +587,43 @@
     "ingredients": [
       {
         "name": "Скрембл из 3х яиц со сметаной",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Булочке \"8злаков\"",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Творожный сыр",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Копченый лосось со сметаной и каперсами",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Зелень",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Овощи (салат, огурец, помидор) заправленные оливковым маслом",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Апельсиновый фреш 0,2л",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -575,31 +642,37 @@
     "ingredients": [
       {
         "name": "Омлет",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Булочка чиабатта",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Плавленный сыр чеддер",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Жареный бекон",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Овощи (салат, огурец, помидор) заправленные оливковым маслом",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Апельсиновый фреш 0,2л",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -618,26 +691,31 @@
     "ingredients": [
       {
         "name": "Омлет из 3х яиц с помидором, зеленью и луком",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Венские сосиски",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Хаш брауны",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Тосты",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Блинчики с клубничным соусом, посыпанных сахарной пудрой",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -656,26 +734,31 @@
     "ingredients": [
       {
         "name": "Глазунья из 3х яиц",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Бекон",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Картофелем по-деревенски",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Гренки из черного хлеба",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Зелень",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -752,46 +835,55 @@
     "ingredients": [
       {
         "name": "Тортилья",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Венская сосиска",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Омлето из 2х яиц",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Маринованные огурцы",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Лук фри",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Сыр чеддер",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Кетчуп",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Горчица",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Майонез",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
@@ -810,30 +902,33 @@
     "ingredients": [
       {
         "name": "Нежные сырники",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Cахарная пудра",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Сметана",
+        "default": true,
         "inProduct": true,
         "price": 0
       },
       {
         "name": "Клубничнй соус",
+        "default": true,
         "inProduct": true,
         "price": 0
       }
     ]
   },
-
   {
     "id": "pancake01",
-    "name": "С копченым лососем",
+    "name": "Блинчики c копченым лососем",
     "type": "Блинчики",
     "descr": "Блины собственного приготовления с рыбой и соусом - сметаной",
     "img": false,
@@ -844,7 +939,7 @@
   },
   {
     "id": "pancake02",
-    "name": "С ветчиной и сыром",
+    "name": "Блинчики c ветчиной и сыром",
     "type": "Блинчики",
     "descr": "Блины собственного приготовления с ветчиной, сыром чеддер и соусом- сметаной",
     "img": false,
@@ -855,7 +950,7 @@
   },
   {
     "id": "pancake03",
-    "name": "С бананом и шоколадом",
+    "name": "Блинчики c бананом и шоколадом",
     "type": "Блинчики",
     "descr": "Блины собственного приготовления с бананом, шоколадным топпингом и сахарной пудрой",
     "img": false,
@@ -866,7 +961,7 @@
   },
   {
     "id": "pancake04",
-    "name": "С соусом",
+    "name": "Блинчики c соусом",
     "type": "Блинчики",
     "descr": "Блины собственного приготовления с соусом на выбор: абрикосовый джем, клубничный соус, сметана, сгущенка.",
     "img": false,
@@ -901,7 +996,6 @@
       }
     ]
   },
-
   {
     "id": "hot01",
     "name": "Котлеты куриные с пюре",
@@ -935,7 +1029,6 @@
     "cartType": "no-img",
     "isNew": false
   },
-
   {
     "id": "snack01",
     "name": "Чикен Фрай",
@@ -980,7 +1073,6 @@
     "cartType": "no-img",
     "isNew": false
   },
-
   {
     "id": "potatoes01",
     "name": "Фри small",
@@ -1036,7 +1128,6 @@
     "cartType": "no-img",
     "isNew": false
   },
-
   {
     "id": "sauce01",
     "name": "Горчичный",
@@ -1169,7 +1260,6 @@
     "cartType": "no-img",
     "isNew": false
   },
-
   {
     "id": "drink01",
     "name": "Pepsi 0.25л",
